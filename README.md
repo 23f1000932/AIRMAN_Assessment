@@ -104,7 +104,7 @@ No machine learning is used. Every score component is directly readable from the
 
 2. **What prompts or tasks did AI help with?** 
 
-## 1. WHO YOU ARE AND WHAT THIS IS
+1. WHO YOU ARE AND WHAT THIS IS
 
 You are a Data Scientist completing a technical internship assessment for **AIRMAN Aeronautics Pvt. Ltd.**, an Indian aviation tech company. They build two products:
 
@@ -115,13 +115,11 @@ The assessment asks you to analyse simulated FTO data and produce **business int
 
 **This is not a generic data science task. Think aviation domain throughout.**
 
----
-
-## 2. DATASETS — WHAT EXISTS AND WHAT IS IN THEM
+2. DATASETS — WHAT EXISTS AND WHAT IS IN THEM
 
 All 6 CSV files are already created, cleaned, and placed in the project `data/` folder. Do NOT recreate them. Load them exactly as-is.
 
-### `data/sorties.csv` — 300 rows
+ `data/sorties.csv` — 300 rows
 Flight sessions (called "sorties" in aviation). Each row is one scheduled flight.
 
 | Column | Description |
@@ -141,9 +139,7 @@ Flight sessions (called "sorties" in aviation). Each row is one scheduled flight
 **Date range:** May 1, 2026 → June 30, 2026  
 **Completed:** 253 sorties | **Cancelled:** 47 sorties | **Delayed (>0 min):** 222 sorties
 
----
-
-### `data/aircraft.csv` — 120 rows
+`data/aircraft.csv` — 120 rows
 Fleet of aircraft across 4 bases.
 
 | Column | Description |
@@ -160,9 +156,7 @@ Fleet of aircraft across 4 bases.
 - A003, A009, A016: `maintenance_downtime_hours > total_available_hours` (impossible — flag this)
 - Several aircraft have defect_count ≥ 12 (flag for operational review)
 
----
-
-### `data/cadets.csv` — 150 rows
+`data/cadets.csv` — 150 rows
 Student pilots enrolled at the FTO.
 
 | Column | Description |
@@ -178,9 +172,7 @@ Student pilots enrolled at the FTO.
 **Known planted issues:**
 - "Sanya Gupta", "Vikram Malhotra", "Rahul Patel" — each name appears twice with different cadet_ids (data entry duplicate risk)
 
----
-
-### `data/instructors.csv` — 100 rows
+ `data/instructors.csv` — 100 rows
 Flying instructors across 4 bases.
 
 | Column | Description |
@@ -192,9 +184,8 @@ Flying instructors across 4 bases.
 | total_duty_hours | Total hours on duty this period |
 | total_flight_hours | Hours actually flying/instructing |
 
----
 
-### `data/payments.csv` — 150 rows
+`data/payments.csv` — 150 rows
 Fee collection status per cadet.
 
 | Column | Description |
@@ -208,9 +199,8 @@ Fee collection status per cadet.
 **Known planted issues:**
 - C006, C023, C068, C102: `outstanding_amount ≠ invoiced_amount − paid_amount` (deliberate calculation errors to catch)
 
----
 
-### `data/toga_study.csv` — 450 rows
+`data/toga_study.csv` — 450 rows
 Study activity per cadet per subject (3 subjects per cadet).
 
 | Column | Description |
@@ -227,16 +217,13 @@ Study activity per cadet per subject (3 subjects per cadet).
 - C005 / Radio Telephony: chapters_completed (27) > total_chapters (24)
 - C030 / Radio Telephony: chapters_completed (37) > total_chapters (36)
 
----
 
-### Additional known data quality issues across sorties:
+Additional known data quality issues across sorties:
 - **20 sorties** where instructor's `base_id` (instructors.csv) ≠ sortie's `base_id` — operational anomaly
 - **4 sorties** where instructor's `aircraft_qualified` type ≠ the aircraft `type` used in that sortie:
   - S0044, S0107, S0184, S0263
 
----
-
-## 3. REQUIRED FOLDER STRUCTURE
+ 3. REQUIRED FOLDER STRUCTURE
 
 Create this exact structure. Every file path below must exist after your work:
 
@@ -274,13 +261,13 @@ airman-data-science-assessment/
 
 ---
 
-## 4. WHAT TO BUILD — STEP BY STEP
+ 4. WHAT TO BUILD — STEP BY STEP
 
 Complete every step in order. Each step corresponds to one task in the assessment.
 
 ---
 
-### STEP 1 — Data Cleaning & Validation (`reports/data_quality_report.md` + `data/cleaned_outputs.csv`)
+ STEP 1 — Data Cleaning & Validation (`reports/data_quality_report.md` + `data/cleaned_outputs.csv`)
 
 Load all 6 CSVs. Run validation checks and document every issue found. You already know the planted issues — catch them AND look for any additional patterns.
 
@@ -309,7 +296,7 @@ Load all 6 CSVs. Run validation checks and document every issue found. You alrea
 
 ---
 
-### STEP 2 — Skynet Operations Analytics (`reports/skynet_operations_analysis.md`)
+ STEP 2 — Skynet Operations Analytics (`reports/skynet_operations_analysis.md`)
 
 **Aircraft Utilization:**
 ```python
@@ -341,8 +328,7 @@ avg_delay = mean(delay_minutes) for completed sorties
 Write the report in aviation-appropriate language. Mention Skynet as the platform that should surface these metrics on its operations dashboard.
 
 ---
-
-### STEP 3 — Training Progress Analytics (`reports/training_progress_analysis.md`)
+ STEP 3 — Training Progress Analytics (`reports/training_progress_analysis.md`)
 
 ```python
 # Per cadet:
@@ -365,9 +351,8 @@ Also cross-reference:
 
 End with a table: cadet_id, course, progress_pct, flying_rate (hrs/day), estimated_completion_date, risk_flag, risk_reason.
 
----
 
-### STEP 4 — TOGA Study Intelligence (`reports/toga_study_intelligence.md`)
+ STEP 4 — TOGA Study Intelligence (`reports/toga_study_intelligence.md`)
 
 ```python
 # Per cadet per subject:
@@ -397,9 +382,7 @@ Instructor Intervention Required: [Yes/No + reason]
 
 The "recommended action" should be specific — not "study more" but "Focus on Meteorology chapters 8–21, attempt 3 practice tests before next flight."
 
----
-
-### STEP 5 — Finance & Operational Risk (`reports/finance_risk_analysis.md`)
+ STEP 5 — Finance & Operational Risk (`reports/finance_risk_analysis.md`)
 
 ```python
 # Per cadet:
@@ -426,9 +409,7 @@ Also note the 4 cadets with calculation errors — flag separately as "data inte
 
 Total outstanding across all cadets should also be computed as a revenue metric.
 
----
-
-### STEP 6 — Explainable Cadet Risk Score (`data/risk_scores.csv` + part of `reports/methodology.md`)
+STEP 6 — Explainable Cadet Risk Score (`data/risk_scores.csv` + part of `reports/methodology.md`)
 
 Build a **weighted formula risk score** — no ML models. Simple, transparent, explainable.
 
@@ -461,9 +442,8 @@ The `main_risk_reason` column should be a short human-readable string like:
 - "Inactive on TOGA for 18 days + low quiz scores"
 - "Frequent sortie cancellations + payment risk"
 
----
 
-### STEP 7 — Charts (`charts/` — 7 PNG files)
+ STEP 7 — Charts (`charts/` — 7 PNG files)
 
 Use **matplotlib + seaborn**. Use a consistent color palette. Save each as 300 DPI PNG.
 
@@ -501,9 +481,7 @@ Scatter plot. X = flight_progress (%), Y = study_readiness score. Color points b
 - Bottom-right: "Flying but not studying"
 - Bottom-left: "High Risk"
 
----
-
-### STEP 8 — Executive Insight Report (`reports/executive_insights.md`)
+ STEP 8 — Executive Insight Report (`reports/executive_insights.md`)
 
 Write a concise leadership report. No bullet dumps — each insight must have a number, a finding, and a specific action.
 
@@ -513,37 +491,35 @@ Structure:
 # Executive Insight Report — AIRMAN FTO Intelligence
 *Prepared by: [Your Name] | Data Period: May–June 2026*
 
-## 1. Top 5 Operational Insights (Skynet)
+1. Top 5 Operational Insights (Skynet)
 [Each: Finding → Business Impact → Recommended Action]
 
-## 2. Top 5 Training Progress Insights
+2. Top 5 Training Progress Insights
 [Each: Cadet or pattern → Risk → Action]
 
-## 3. Top 3 TOGA Personalisation Opportunities
+3. Top 3 TOGA Personalisation Opportunities
 [Each: Behaviour observed in data → Feature TOGA should build]
 
-## 4. Top 3 Finance Risks
+4. Top 3 Finance Risks
 [Each: Cadet/amount → Risk to training continuity → Suggested action]
 
-## 5. Product Recommendations for Skynet
+5. Product Recommendations for Skynet
 [5 specific dashboard features or alerts Skynet should show the FTO ops team]
 
-## 6. Product Recommendations for TOGA
+6. Product Recommendations for TOGA
 [5 specific features TOGA should add for cadets based on this data]
 
-## 7. Data Quality Issues Found
+7. Data Quality Issues Found
 [Summary table]
 
-## 8. Suggested Additional Data Fields AIRMAN Should Collect
+8. Suggested Additional Data Fields AIRMAN Should Collect
 [At least 5 new fields with justification]
 
-## 9. Final Recommendation to AIRMAN Leadership
+9. Final Recommendation to AIRMAN Leadership
 [2–3 paragraph strategic summary]
 ```
 
----
-
-### STEP 9 — Methodology Document (`reports/methodology.md`)
+STEP 9 — Methodology Document (`reports/methodology.md`)
 
 Answer all 10 questions from the assessment clearly. Then add the risk score formula derivation.
 
@@ -561,7 +537,7 @@ Answer all 10 questions from the assessment clearly. Then add the risk score for
 
 ---
 
-### STEP 10 — Jupyter Notebook (`notebooks/analysis.ipynb`)
+STEP 10 — Jupyter Notebook (`notebooks/analysis.ipynb`)
 
 All computation must live here. Structure it with clear markdown cells as section headers:
 
@@ -582,7 +558,7 @@ Every section should end with a `print()` summary of its key findings so the not
 
 ---
 
-### STEP 11 — README.md
+STEP 11 — README.md
 
 Include all required sections:
 
@@ -610,7 +586,7 @@ Include all required sections:
 
 ---
 
-## 5. LIBRARIES TO USE
+5. LIBRARIES TO USE
 
 ```python
 import pandas as pd
@@ -629,7 +605,7 @@ warnings.filterwarnings('ignore')
 
 ---
 
-## 6. IMPORTANT RULES — DO NOT VIOLATE
+6. IMPORTANT RULES — DO NOT VIOLATE
 
 1. **No ML models.** The risk score must be a transparent weighted formula. No RandomForest, no logistic regression, no clustering. The assessment penalises unnecessary ML.
 2. **Every number must connect to a business decision.** "Aircraft A009 has 220 hours of downtime against 197 available hours" is more useful than "downtime is high."
@@ -642,7 +618,7 @@ warnings.filterwarnings('ignore')
 
 ---
 
-## 7. DELIVERABLE CHECKLIST
+ 7. DELIVERABLE CHECKLIST
 
 Before submitting, confirm every file exists:
 
@@ -669,7 +645,7 @@ Before submitting, confirm every file exists:
 
 ---
 
-## 8. TONE & QUALITY BAR
+8. TONE & QUALITY BAR
 
 The assessors will reject work that:
 - Produces generic insights ("utilization is low") without specifics
