@@ -1,0 +1,151 @@
+cadet_id,name,course,risk_score,risk_level,flight_progress,study_readiness,avg_quiz_score,payment_risk_score,days_inactive,cancel_rate,main_risk_reason
+C001,Sanya Verma,CPL,33.81,Low,0.7515000000000001,69.32,61.66666666666666,64.76,12,0.0,Payment risk + Low flight progress
+C002,Sanya Gupta,CPL,40.37,Medium,0.188,75.4,65.0,62.69,1,0.0,Low flight progress + Payment risk
+C003,Ishaan Bose,PPL,41.22,Medium,0.42,44.21,58.333333333333336,38.73,7,0.0,Low flight progress + Low study readiness
+C004,Vikram Malhotra,PPL,32.61,Low,0.6867,61.28,74.66666666666667,61.58,8,0.0,Payment risk + Low flight progress
+C005,Sneha Sharma,PPL,29.13,Low,0.7578,80.45,72.0,56.46,3,0.5,Payment risk + Low flight progress
+C006,Tanya Nair,PPL,35.95,Low,0.4044,62.47,69.66666666666667,50.0,3,0.0,Low flight progress + Low study readiness
+C007,Rohan Iyer,CPL,37.46,Low,0.7155,61.78,53.333333333333336,41.35,19,0.0,TOGA inactivity + Low study readiness
+C008,Priya Kapoor,CPL,36.37,Low,0.615,58.15,62.333333333333336,44.85,12,0.0,Low flight progress + Low study readiness
+C009,Rahul Kapoor,CPL,37.63,Low,0.45399999999999996,62.98,56.333333333333336,40.17,3,0.25,Low flight progress + Low study readiness
+C010,Dev Kapoor,PPL,33.53,Low,0.7644,62.59,70.33333333333333,44.69,8,0.5,Low study readiness + Payment risk
+C011,Sanya Gupta,CPL,56.11,Medium,0.055,55.9,48.333333333333336,69.42,7,0.2,Low flight progress + Payment risk
+C012,Aditi Pillai,CPL,38.07,Low,0.4215,69.14,80.0,50.71,7,0.333,Low flight progress + Payment risk
+C013,Dev Gupta,PPL,45.93,Medium,0.3378,68.21,70.0,41.24,18,0.333,Low flight progress + TOGA inactivity
+C014,Sneha Rao,CPL,46.32,Medium,0.345,77.93,69.33333333333333,36.18,11,1.0,Low flight progress + Sortie cancellations
+C015,Ananya Joshi,PPL,20.67,Low,0.9311,62.34,74.33333333333333,37.09,4,0.0,Low study readiness + Payment risk
+C016,Ishaan Patel,CPL,28.91,Low,0.6765000000000001,62.81,75.66666666666667,34.93,9,0.0,Low flight progress + Low study readiness
+C017,Kiran Kapoor,PPL,34.93,Low,0.38670000000000004,60.69,63.333333333333336,38.25,1,0.0,Low flight progress + Low study readiness
+C018,Ananya Patel,CPL,36.85,Low,0.35700000000000004,50.42,52.0,17.75,2,0.0,Low flight progress + Low study readiness
+C019,Ananya Sharma,CPL,45.2,Medium,0.10800000000000001,75.34,62.66666666666666,52.43,9,0.0,Low flight progress + Payment risk
+C020,Kiran Sharma,CPL,25.32,Low,0.8255,55.73,64.66666666666667,18.68,8,0.0,Low study readiness + Low quiz scores
+C021,Aditya Singh,CPL,38.38,Low,0.40850000000000003,68.38,66.33333333333333,51.48,9,0.0,Low flight progress + Payment risk
+C022,Aryan Tripathi,CPL,26.47,Low,0.7955,80.71,69.33333333333333,45.99,12,0.0,Payment risk + TOGA inactivity
+C023,Divya Chaudhary,CPL,37.0,Low,0.33299999999999996,56.35,72.66666666666667,50.0,0,0.0,Low flight progress + Low study readiness
+C024,Arjun Singh,PPL,37.17,Low,0.5311,73.32,57.333333333333336,71.42,6,0.0,Low flight progress + Payment risk
+C025,Kabir Kapoor,PPL,55.8,Medium,0.2378,45.12,54.0,75.76,5,0.5,Low flight progress + Payment risk
+C026,Dev Sharma,CPL,29.28,Low,0.5945,65.86,68.0,50.11,0,0.0,Low flight progress + Payment risk
+C027,Aditi Kapoor,PPL,31.36,Low,0.6978,52.12,43.333333333333336,38.22,0,0.0,Low study readiness + Low quiz scores
+C028,Kabir Malhotra,PPL,42.84,Medium,0.2756,67.9,68.66666666666667,44.1,14,0.0,Low flight progress + TOGA inactivity
+C029,Tanya Gupta,CPL,35.89,Low,0.4535,60.98,58.0,37.49,0,0.25,Low flight progress + Low study readiness
+C030,Aditya Bose,CPL,43.51,Medium,0.09849999999999999,67.11,75.66666666666667,61.66,3,0.0,Low flight progress + Payment risk
+C031,Ananya Pillai,CPL,39.53,Low,0.379,49.84,60.0,29.82,7,0.0,Low flight progress + Low study readiness
+C032,Rohan Malhotra,PPL,42.24,Medium,0.24670000000000003,62.35,71.0,30.2,14,0.0,Low flight progress + Low study readiness
+C033,Neha Verma,CPL,29.05,Low,0.7440000000000001,57.57,75.33333333333333,69.75,0,0.0,Payment risk + Low study readiness
+C034,Aditya Malhotra,PPL,28.92,Low,0.6,59.66,74.0,33.04,4,0.0,Low flight progress + Low study readiness
+C035,Dev Singh,PPL,27.56,Low,0.94,62.69,50.333333333333336,52.1,0,0.333,Payment risk + Low study readiness
+C036,Vikram Malhotra,PPL,32.1,Low,0.46,64.57,61.0,14.4,7,0.0,Low flight progress + Low study readiness
+C037,Harsh Srivastava,CPL,35.86,Low,0.5925,41.71,53.0,33.11,4,0.0,Low study readiness + Low flight progress
+C038,Aditi Verma,CPL,36.88,Low,0.7190000000000001,73.38,72.33333333333333,59.21,23,0.0,TOGA inactivity + Payment risk
+C039,Nikhil Menon,PPL,40.59,Medium,0.2444,60.45,89.33333333333333,54.58,8,0.0,Low flight progress + Payment risk
+C040,Sanya Menon,PPL,38.86,Low,0.3156,55.13,78.33333333333333,31.32,3,0.333,Low flight progress + Low study readiness
+C041,Rahul Nair,PPL,48.7,Medium,0.4756,54.87,58.66666666666666,42.41,8,1.0,Low flight progress + Sortie cancellations
+C042,Rohan Gupta,PPL,39.38,Low,0.4578,57.02,54.66666666666666,9.51,18,0.0,Low flight progress + TOGA inactivity
+C043,Kabir Nair,PPL,36.68,Low,0.7533,50.86,61.333333333333336,25.87,22,0.0,TOGA inactivity + Low study readiness
+C044,Priya Menon,CPL,45.8,Medium,0.3125,68.46,52.333333333333336,61.02,12,0.0,Low flight progress + Payment risk
+C045,Vikram Sharma,PPL,39.68,Low,0.36219999999999997,75.76,68.0,47.24,10,0.2,Low flight progress + Payment risk
+C046,Ishaan Nair,CPL,40.91,Medium,0.172,62.82,74.33333333333333,29.52,9,0.0,Low flight progress + Low study readiness
+C047,Tanya Bose,PPL,45.53,Medium,0.1911,67.38,68.66666666666667,47.22,14,0.0,Low flight progress + Payment risk
+C048,Pooja Pandey,PPL,44.59,Medium,0.3044,52.69,54.0,62.28,3,0.0,Low flight progress + Low study readiness
+C049,Ravi Shukla,PPL,27.68,Low,0.7733,75.87,65.66666666666667,33.57,14,0.0,TOGA inactivity + Low flight progress
+C050,Neha Sharma,CPL,30.14,Low,0.596,56.32,65.0,37.06,1,0.0,Low flight progress + Low study readiness
+C051,Rahul Patel,PPL,21.51,Low,0.9311,77.35,66.33333333333333,31.37,11,0.0,TOGA inactivity + Low quiz scores
+C052,Nikhil Kapoor,PPL,36.05,Low,0.4778,66.97,71.0,26.92,8,0.4,Low flight progress + Low study readiness
+C053,Nikhil Gupta,PPL,47.3,Medium,0.2289,60.47,53.333333333333336,57.43,9,0.0,Low flight progress + Payment risk
+C054,Nikhil Malhotra,PPL,14.79,Low,0.8244,74.3,84.66666666666667,16.42,1,0.0,Low study readiness + Low flight progress
+C055,Tanya Kapoor,CPL,27.78,Low,0.8125,74.79,70.0,73.68,5,0.0,Payment risk + Low study readiness
+C056,Neha Rao,CPL,41.82,Medium,0.12050000000000001,68.97,76.0,63.53,1,0.0,Low flight progress + Payment risk
+C057,Dev Pillai,CPL,41.69,Medium,0.439,54.85,54.333333333333336,38.58,12,0.0,Low flight progress + Low study readiness
+C058,Rohan Nair,PPL,44.46,Medium,0.2844,62.55,66.66666666666667,43.9,15,0.0,Low flight progress + TOGA inactivity
+C059,Sunita Tiwari,PPL,36.62,Low,0.42219999999999996,64.71,52.0,49.46,1,0.0,Low flight progress + Payment risk
+C060,Gaurav Mishra,CPL,37.07,Low,0.5195000000000001,65.39,68.66666666666667,69.57,6,0.0,Low flight progress + Payment risk
+C061,Rohan Singh,PPL,28.04,Low,0.6756,73.16,71.0,34.77,10,0.0,Low flight progress + Low study readiness
+C062,Nidhi Dwivedi,PPL,28.5,Low,0.9244,51.67,82.0,78.32,0,0.25,Payment risk + Low study readiness
+C063,Sanya Singh,CPL,53.8,Medium,0.2445,62.46,52.333333333333336,46.15,20,0.333,Low flight progress + TOGA inactivity
+C064,Neha Nair,PPL,48.03,Medium,0.2644,59.42,61.0,21.16,5,1.0,Low flight progress + Sortie cancellations
+C065,Rohan Joshi,PPL,37.12,Low,0.2556,59.55,83.0,12.5,12,0.0,Low flight progress + Low study readiness
+C066,Sneha Singh,CPL,34.72,Low,0.37799999999999995,73.24,65.66666666666667,14.48,13,0.0,Low flight progress + TOGA inactivity
+C067,Sanya Malhotra,CPL,36.52,Low,0.09449999999999999,67.86,60.0,9.72,0,0.0,Low flight progress + Low study readiness
+C068,Kabir Iyer,CPL,43.23,Medium,0.1805,74.56,52.333333333333336,50.0,6,0.0,Low flight progress + Payment risk
+C069,Nikhil Joshi,CPL,51.26,Medium,0.5975,44.26,41.66666666666666,72.0,21,0.0,Low study readiness + Payment risk
+C070,Vikram Singh,PPL,41.64,Medium,0.30219999999999997,67.92,58.0,33.21,3,0.5,Low flight progress + Low study readiness
+C071,Meera Pillai,CPL,22.73,Low,0.9285,62.89,74.33333333333333,4.49,18,0.0,TOGA inactivity + Low study readiness
+C072,Rohan Menon,PPL,44.24,Medium,0.1711,45.54,55.333333333333336,32.86,2,0.0,Low flight progress + Low study readiness
+C073,Sneha Gupta,CPL,45.64,Medium,0.294,51.29,38.66666666666666,30.3,9,0.0,Low flight progress + Low study readiness
+C074,Tarun Agrawal,PPL,32.09,Low,0.7867000000000001,45.69,75.66666666666667,68.33,4,0.0,Low study readiness + Payment risk
+C075,Ishaan Verma,PPL,30.81,Low,0.8044,54.53,64.0,23.74,10,0.286,Low study readiness + Low quiz scores
+C076,Kabir Rao,PPL,25.92,Low,0.35109999999999997,77.52,91.0,22.36,1,0.0,Low flight progress + Low study readiness
+C077,Sanya Nair,CPL,54.56,Medium,0.166,67.38,60.0,71.22,21,0.0,Low flight progress + Payment risk
+C078,Rohan Kapoor,CPL,43.25,Medium,0.5954999999999999,56.79,47.0,60.29,5,0.5,Low flight progress + Payment risk
+C079,Arjun Kapoor,PPL,33.13,Low,0.6556000000000001,61.42,77.66666666666667,69.72,6,0.0,Payment risk + Low flight progress
+C080,Ananya Nair,CPL,31.6,Low,0.787,60.73,54.333333333333336,57.15,6,0.0,Payment risk + Low study readiness
+C081,Aditya Sharma,CPL,33.31,Low,0.569,78.12,61.0,68.72,4,0.0,Low flight progress + Payment risk
+C082,Sanya Rao,PPL,36.63,Low,0.6,76.92,65.33333333333333,35.42,3,1.0,Low flight progress + Sortie cancellations
+C083,Swati Jain,CPL,49.61,Medium,0.17149999999999999,72.6,63.333333333333336,62.81,12,0.25,Low flight progress + Payment risk
+C084,Vikram Nair,PPL,34.72,Low,0.7311,50.48,69.33333333333333,73.26,5,0.0,Payment risk + Low study readiness
+C085,Priya Gupta,CPL,28.25,Low,0.621,61.74,63.333333333333336,14.17,2,0.25,Low flight progress + Low study readiness
+C086,Arjun Sharma,CPL,49.3,Medium,0.18350000000000002,73.03,79.66666666666667,36.31,10,1.0,Low flight progress + Sortie cancellations
+C087,Manish Shah,PPL,51.66,Medium,0.2267,59.38,57.0,41.69,23,0.0,Low flight progress + TOGA inactivity
+C088,Priya Bose,CPL,31.57,Low,0.877,62.0,53.66666666666666,32.95,18,0.0,TOGA inactivity + Low study readiness
+C089,Shruti Mehta,PPL,28.06,Low,0.8356,68.77,68.33333333333333,46.36,2,0.5,Payment risk + Low study readiness
+C090,Aditi Gupta,CPL,45.38,Medium,0.3925,61.74,59.66666666666666,43.29,20,0.0,Low flight progress + TOGA inactivity
+C091,Vivek Desai,PPL,26.2,Low,0.9333,69.36,78.0,47.33,16,0.0,TOGA inactivity + Payment risk
+C092,Aditya Nair,PPL,51.05,Medium,0.3,52.11,65.0,48.16,3,1.0,Low flight progress + Sortie cancellations
+C093,Kiran Malhotra,PPL,30.43,Low,0.6467,51.45,66.0,28.58,5,0.0,Low study readiness + Low flight progress
+C094,Ananya Menon,CPL,41.62,Medium,0.042,56.26,59.333333333333336,18.81,0,0.0,Low flight progress + Low study readiness
+C095,Priya Iyer,PPL,35.14,Low,0.7111,62.4,67.0,36.31,20,0.0,TOGA inactivity + Low study readiness
+C096,Sanya Gupta,PPL,27.35,Low,0.8489,45.85,56.66666666666666,18.31,7,0.0,Low study readiness + Low quiz scores
+C097,Deepa Patil,PPL,42.57,Medium,0.1422,52.12,66.33333333333333,43.35,0,0.0,Low flight progress + Low study readiness
+C098,Kunal Kulkarni,PPL,41.55,Medium,0.6911,54.07,60.0,74.27,15,0.0,Payment risk + Low study readiness
+C099,Tanya Verma,CPL,42.47,Medium,0.1315,63.67,59.0,22.26,8,0.0,Low flight progress + Low study readiness
+C100,Rahul Gupta,CPL,22.79,Low,0.809,71.34,77.66666666666667,19.56,12,0.0,TOGA inactivity + Low study readiness
+C101,Priti Pawar,PPL,19.33,Low,0.8,72.76,67.66666666666667,13.52,4,0.0,Low study readiness + Low flight progress
+C102,Rohan Sharma,PPL,44.01,Medium,0.1822,59.17,60.66666666666666,50.0,4,0.0,Low flight progress + Low study readiness
+C103,Sameer Bhosale,CPL,28.55,Low,0.2425,73.41,83.66666666666667,12.28,0,0.0,Low flight progress + Low study readiness
+C104,Anjali Kale,CPL,62.11,Medium,0.24600000000000002,53.71,51.0,71.03,22,0.5,Low flight progress + TOGA inactivity
+C105,Arjun Malhotra,CPL,34.27,Low,0.6745,73.87,71.66666666666667,47.74,19,0.0,TOGA inactivity + Low flight progress
+C106,Rahul Malhotra,CPL,48.18,Medium,0.252,56.99,51.333333333333336,43.82,14,0.0,Low flight progress + Low study readiness
+C107,Nikhil Pillai,CPL,44.68,Medium,0.539,59.02,73.66666666666667,73.37,15,0.25,Low flight progress + Payment risk
+C108,Akash Naik,PPL,30.56,Low,0.8133,55.04,69.0,39.49,6,0.333,Low study readiness + Payment risk
+C109,Priya Sharma,CPL,39.59,Low,0.8740000000000001,62.73,60.66666666666666,70.56,25,0.0,TOGA inactivity + Payment risk
+C110,Dev Bose,PPL,41.4,Medium,0.22,54.74,59.0,34.62,3,0.0,Low flight progress + Low study readiness
+C111,Kabir Pillai,PPL,35.97,Low,0.16440000000000002,68.53,77.0,10.03,1,0.333,Low flight progress + Low study readiness
+C112,Arjun Pillai,CPL,43.85,Medium,0.27899999999999997,74.27,73.0,70.86,12,0.0,Low flight progress + Payment risk
+C113,Neha Patel,PPL,35.51,Low,0.3956,68.03,81.33333333333333,41.35,5,0.25,Low flight progress + Low study readiness
+C114,Vikram Malhotra,CPL,35.31,Low,0.518,53.03,64.66666666666667,43.75,4,0.0,Low flight progress + Low study readiness
+C115,Smita Hegde,CPL,43.74,Medium,0.1815,49.63,56.333333333333336,41.05,1,0.0,Low flight progress + Low study readiness
+C116,Varun Shetty,PPL,52.16,Medium,0.1889,57.96,44.0,67.15,10,0.0,Low flight progress + Payment risk
+C117,Nikhil Patel,PPL,27.34,Low,0.6978,70.77,83.66666666666667,32.11,10,0.167,Low flight progress + Low study readiness
+C118,Sneha Malhotra,CPL,34.29,Low,0.6435,56.62,55.66666666666666,60.36,2,0.0,Payment risk + Low flight progress
+C119,Ishaan Iyer,PPL,32.12,Low,0.6844,52.44,63.0,47.77,4,0.0,Low study readiness + Low flight progress
+C120,Puja Bhat,CPL,34.08,Low,0.6934999999999999,63.9,56.333333333333336,60.97,7,0.0,Payment risk + Low flight progress
+C121,Vikram Malhotra,CPL,50.58,Medium,0.10400000000000001,61.85,69.33333333333333,69.66,11,0.0,Low flight progress + Payment risk
+C122,Girish Kamath,CPL,32.43,Low,0.883,60.45,71.0,41.65,22,0.0,TOGA inactivity + Low study readiness
+C123,Rahul Sharma,CPL,28.48,Low,0.8454999999999999,65.93,78.66666666666667,43.99,16,0.0,TOGA inactivity + Low study readiness
+C124,Lata Nambiar,CPL,29.93,Low,0.2675,78.16,68.66666666666667,0.36,0,0.25,Low flight progress + Low quiz scores
+C125,Kabir Singh,PPL,29.48,Low,0.49560000000000004,76.79,76.0,57.53,0,0.0,Low flight progress + Payment risk
+C126,Kiran Joshi,PPL,33.69,Low,0.22219999999999998,76.11,71.0,14.11,6,0.0,Low flight progress + Low study readiness
+C127,Rahul Patel,CPL,20.88,Low,0.7855,64.15,66.0,21.65,0,0.0,Low study readiness + Low flight progress
+C128,Kiran Menon,CPL,48.26,Medium,0.491,67.07,66.0,25.66,20,1.0,Low flight progress + Sortie cancellations
+C129,Naveen Thampi,PPL,32.27,Low,0.7933,51.6,58.0,10.8,19,0.0,Low study readiness + TOGA inactivity
+C130,Meera Bose,CPL,15.48,Low,0.93,69.34,79.0,19.68,3,0.0,Low study readiness + Low quiz scores
+C131,Seema Kutty,CPL,46.24,Medium,0.36200000000000004,42.55,63.333333333333336,55.33,10,0.0,Low flight progress + Low study readiness
+C132,Aditya Pillai,PPL,46.83,Medium,0.2733,52.77,60.66666666666666,25.47,9,0.5,Low flight progress + Low study readiness
+C133,Paresh Subramaniam,PPL,39.07,Low,0.2133,55.66,59.333333333333336,19.53,3,0.0,Low flight progress + Low study readiness
+C134,Meera Iyer,PPL,26.73,Low,0.5,64.43,74.66666666666667,5.46,5,0.0,Low flight progress + Low study readiness
+C135,Kiran Bose,CPL,22.64,Low,0.8325,76.08,66.33333333333333,34.15,7,0.0,Payment risk + Low quiz scores
+C136,Anita Krishnamurthy,PPL,33.24,Low,0.6156,50.26,53.66666666666666,41.52,1,0.0,Low study readiness + Low flight progress
+C137,Sneha Nair,PPL,36.76,Low,0.28,66.42,80.66666666666667,20.98,2,0.5,Low flight progress + Low study readiness
+C138,Tanya Menon,PPL,27.46,Low,0.8222,71.41,60.66666666666666,29.31,14,0.0,TOGA inactivity + Low quiz scores
+C139,Suresh Venkatesan,CPL,38.17,Low,0.7995,61.42,71.33333333333333,60.91,4,1.0,Sortie cancellations + Payment risk
+C140,Geeta Raman,PPL,28.77,Low,0.7,77.27,77.66666666666667,75.82,4,0.0,Payment risk + Low flight progress
+C141,Vinod Gopal,PPL,40.16,Medium,0.2822,68.43,86.33333333333333,60.11,3,0.333,Low flight progress + Payment risk
+C142,Meera Malhotra,CPL,55.72,Medium,0.445,45.6,40.0,47.54,23,0.333,Low flight progress + TOGA inactivity
+C143,Ananya Verma,CPL,36.89,Low,0.345,54.55,60.66666666666666,26.8,3,0.0,Low flight progress + Low study readiness
+C144,Aditi Menon,PPL,24.98,Low,0.5511,71.45,65.33333333333333,18.98,0,0.0,Low flight progress + Low study readiness
+C145,Kiran Rao,PPL,37.06,Low,0.35109999999999997,59.42,57.0,31.84,3,0.0,Low flight progress + Low study readiness
+C146,Pushpa Murthy,PPL,33.19,Low,0.58,59.79,62.333333333333336,23.29,7,0.2,Low flight progress + Low study readiness
+C147,Hemant Reddy,PPL,38.22,Low,0.4533,54.05,66.33333333333333,22.11,14,0.0,Low flight progress + Low study readiness
+C148,Sudha Kumar,CPL,34.6,Low,0.384,52.13,71.0,18.51,5,0.0,Low flight progress + Low study readiness
+C149,Rahul Patel,PPL,33.52,Low,0.4156,63.88,71.33333333333333,39.27,3,0.0,Low flight progress + Low study readiness
+C150,Arjun Patel,PPL,44.61,Medium,0.62,57.84,48.66666666666666,65.36,5,0.667,Payment risk + Low flight progress

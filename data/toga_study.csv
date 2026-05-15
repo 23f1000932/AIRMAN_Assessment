@@ -1,0 +1,451 @@
+cadet_id,subject,chapters_completed,total_chapters,avg_quiz_score,last_active_date,practice_tests_attempted
+C001,Technical General,19,28,53,2026-04-25,14
+C001,Radio Telephony,13,20,78,2026-04-16,14
+C001,Flight Planning,3,22,54,2026-05-03,12
+C002,Technical General,22,38,90,2026-05-14,12
+C002,Meteorology,38,38,56,2026-04-28,13
+C002,Navigation,18,39,49,2026-04-21,9
+C003,Navigation,6,20,87,2026-05-06,2
+C003,Flight Planning,6,26,36,2026-05-03,8
+C003,Human Performance,10,39,52,2026-05-08,3
+C004,Navigation,4,27,81,2026-04-20,4
+C004,Technical General,18,28,71,2026-05-07,2
+C004,Radio Telephony,15,20,72,2026-05-07,13
+C005,Radio Telephony,27,24,93,2026-05-12,7
+C005,Meteorology,39,40,73,2026-04-26,15
+C005,Flight Planning,20,29,50,2026-05-11,8
+C006,Meteorology,7,21,81,2026-04-16,11
+C006,Navigation,5,22,83,2026-05-12,4
+C006,Radio Telephony,31,31,45,2026-04-28,5
+C007,Air Regulations,22,32,56,2026-04-18,13
+C007,Meteorology,8,24,42,2026-04-26,7
+C007,Human Performance,11,34,62,2026-04-19,11
+C008,Human Performance,8,34,91,2026-04-24,6
+C008,Meteorology,6,26,37,2026-05-03,13
+C008,Technical General,15,27,59,2026-04-18,7
+C009,Technical General,17,33,44,2026-05-09,6
+C009,Flight Planning,26,31,35,2026-05-12,11
+C009,Radio Telephony,2,22,90,2026-05-02,11
+C010,Navigation,15,33,70,2026-04-29,3
+C010,Flight Planning,32,34,52,2026-04-25,3
+C010,Technical General,13,20,89,2026-05-07,8
+C011,Human Performance,3,39,54,2026-05-04,9
+C011,Navigation,18,23,36,2026-05-08,11
+C011,Radio Telephony,23,33,55,2026-04-21,2
+C012,Flight Planning,28,34,82,2026-04-18,10
+C012,Human Performance,4,37,87,2026-04-23,6
+C012,Radio Telephony,18,23,71,2026-05-08,4
+C013,Flight Planning,11,22,59,2026-04-26,13
+C013,Meteorology,11,20,75,2026-04-20,8
+C013,Radio Telephony,27,31,76,2026-04-27,3
+C014,Navigation,13,25,62,2026-04-28,15
+C014,Technical General,34,34,56,2026-04-29,15
+C014,Flight Planning,16,32,90,2026-05-04,12
+C015,Radio Telephony,22,36,94,2026-05-04,9
+C015,Technical General,15,36,64,2026-05-11,0
+C015,Air Regulations,8,24,65,2026-05-08,11
+C016,Radio Telephony,8,33,95,2026-05-05,3
+C016,Air Regulations,20,34,59,2026-05-06,13
+C016,Navigation,11,21,73,2026-04-30,6
+C017,Navigation,23,38,55,2026-04-30,11
+C017,Air Regulations,29,30,43,2026-04-27,3
+C017,Flight Planning,8,22,92,2026-05-14,3
+C018,Navigation,17,29,38,2026-05-13,0
+C018,Meteorology,25,27,58,2026-05-11,14
+C018,Radio Telephony,10,40,60,2026-04-23,2
+C019,Meteorology,19,20,63,2026-05-05,9
+C019,Radio Telephony,8,38,55,2026-05-06,10
+C019,Flight Planning,29,30,70,2026-04-18,15
+C020,Radio Telephony,23,29,65,2026-04-22,2
+C020,Flight Planning,19,20,83,2026-05-07,9
+C020,Navigation,5,35,46,2026-04-22,0
+C021,Air Regulations,5,32,70,2026-04-23,12
+C021,Meteorology,19,26,49,2026-04-16,4
+C021,Human Performance,35,39,80,2026-05-06,14
+C022,Meteorology,29,39,37,2026-04-18,12
+C022,Navigation,32,37,89,2026-05-03,9
+C022,Human Performance,30,38,82,2026-04-18,14
+C023,Human Performance,20,38,43,2026-05-15,2
+C023,Meteorology,18,27,88,2026-05-02,7
+C023,Flight Planning,15,28,87,2026-05-08,1
+C024,Navigation,18,38,60,2026-05-01,8
+C024,Flight Planning,26,34,37,2026-05-09,11
+C024,Technical General,28,28,75,2026-04-27,12
+C025,Flight Planning,8,29,39,2026-04-28,0
+C025,Navigation,23,34,38,2026-05-10,1
+C025,Radio Telephony,6,20,85,2026-05-08,14
+C026,Air Regulations,24,32,46,2026-04-15,10
+C026,Flight Planning,7,21,90,2026-05-12,4
+C026,Radio Telephony,13,34,68,2026-05-15,13
+C027,Technical General,19,24,35,2026-05-15,1
+C027,Air Regulations,7,31,56,2026-05-02,6
+C027,Radio Telephony,31,36,39,2026-05-02,9
+C028,Meteorology,25,36,90,2026-04-18,5
+C028,Technical General,14,21,67,2026-04-24,12
+C028,Navigation,4,22,49,2026-05-01,14
+C029,Meteorology,22,39,58,2026-05-05,14
+C029,Air Regulations,8,25,59,2026-05-07,7
+C029,Navigation,10,34,57,2026-05-15,9
+C030,Navigation,13,37,82,2026-04-15,8
+C030,Radio Telephony,37,36,85,2026-05-12,11
+C030,Human Performance,7,30,60,2026-04-22,3
+C031,Flight Planning,3,31,83,2026-04-29,9
+C031,Navigation,11,22,42,2026-05-07,3
+C031,Radio Telephony,22,32,55,2026-05-08,1
+C032,Meteorology,9,23,66,2026-04-18,15
+C032,Air Regulations,17,26,52,2026-05-01,8
+C032,Flight Planning,7,20,95,2026-04-15,2
+C033,Radio Telephony,12,22,90,2026-04-30,10
+C033,Flight Planning,19,31,85,2026-05-15,1
+C033,Navigation,16,33,51,2026-05-02,0
+C034,Navigation,8,28,77,2026-05-11,3
+C034,Human Performance,2,25,59,2026-05-07,11
+C034,Meteorology,20,27,86,2026-04-21,6
+C035,Air Regulations,2,23,60,2026-05-15,11
+C035,Technical General,25,37,44,2026-04-21,7
+C035,Human Performance,23,29,47,2026-04-24,11
+C036,Human Performance,14,21,35,2026-04-15,15
+C036,Navigation,19,28,76,2026-04-30,3
+C036,Radio Telephony,27,35,72,2026-05-08,6
+C037,Meteorology,5,23,40,2026-05-07,10
+C037,Human Performance,10,30,74,2026-04-21,1
+C037,Technical General,7,35,45,2026-05-11,2
+C038,Meteorology,26,32,63,2026-04-22,10
+C038,Human Performance,20,22,61,2026-04-21,11
+C038,Air Regulations,10,31,93,2026-04-18,4
+C039,Radio Telephony,20,35,87,2026-05-07,8
+C039,Meteorology,9,32,88,2026-05-02,2
+C039,Navigation,13,21,93,2026-04-23,0
+C040,Navigation,21,22,75,2026-04-26,4
+C040,Air Regulations,7,30,79,2026-05-12,0
+C040,Technical General,19,24,81,2026-04-17,0
+C041,Meteorology,14,20,48,2026-05-03,7
+C041,Radio Telephony,5,25,86,2026-05-07,1
+C041,Air Regulations,11,25,42,2026-04-20,15
+C042,Meteorology,3,24,39,2026-04-26,2
+C042,Navigation,27,40,53,2026-04-21,9
+C042,Human Performance,16,26,72,2026-04-27,10
+C043,Navigation,23,30,78,2026-04-23,5
+C043,Flight Planning,17,36,49,2026-04-21,4
+C043,Air Regulations,10,34,57,2026-04-15,2
+C044,Air Regulations,33,40,36,2026-05-03,8
+C044,Meteorology,8,25,39,2026-05-03,11
+C044,Flight Planning,21,26,82,2026-04-25,11
+C045,Radio Telephony,31,31,44,2026-05-05,9
+C045,Navigation,13,40,83,2026-04-28,7
+C045,Human Performance,27,29,77,2026-04-25,12
+C046,Air Regulations,16,24,56,2026-05-03,5
+C046,Technical General,4,21,80,2026-05-06,8
+C046,Flight Planning,13,37,87,2026-04-28,8
+C047,Radio Telephony,8,20,80,2026-04-17,15
+C047,Human Performance,3,24,84,2026-05-01,10
+C047,Technical General,14,30,42,2026-04-27,12
+C048,Radio Telephony,13,23,39,2026-04-24,4
+C048,Navigation,17,36,75,2026-05-12,1
+C048,Technical General,20,35,48,2026-04-23,10
+C049,Air Regulations,26,30,89,2026-04-23,11
+C049,Flight Planning,11,34,59,2026-05-01,8
+C049,Radio Telephony,33,34,49,2026-04-30,15
+C050,Human Performance,5,29,72,2026-05-14,1
+C050,Meteorology,14,21,54,2026-05-04,15
+C050,Technical General,16,27,69,2026-04-25,5
+C051,Flight Planning,8,20,45,2026-05-04,14
+C051,Radio Telephony,23,25,64,2026-04-20,8
+C051,Technical General,25,26,90,2026-05-01,12
+C052,Flight Planning,8,24,53,2026-05-07,7
+C052,Technical General,17,31,79,2026-04-17,4
+C052,Radio Telephony,21,24,81,2026-04-27,10
+C053,Air Regulations,17,38,59,2026-05-06,8
+C053,Human Performance,35,39,52,2026-04-25,15
+C053,Technical General,20,26,49,2026-04-22,0
+C054,Radio Telephony,11,21,88,2026-05-13,1
+C054,Air Regulations,23,25,73,2026-05-14,6
+C054,Human Performance,22,22,93,2026-05-10,9
+C055,Technical General,32,38,78,2026-04-22,2
+C055,Meteorology,29,37,47,2026-05-10,14
+C055,Flight Planning,29,34,85,2026-05-08,15
+C056,Human Performance,18,33,51,2026-04-23,2
+C056,Flight Planning,22,30,95,2026-05-14,14
+C056,Air Regulations,14,37,82,2026-05-14,10
+C057,Technical General,6,21,41,2026-04-27,10
+C057,Meteorology,4,21,35,2026-04-17,14
+C057,Navigation,15,28,87,2026-05-03,3
+C058,Flight Planning,23,40,45,2026-04-27,4
+C058,Meteorology,11,22,91,2026-04-21,6
+C058,Radio Telephony,19,37,64,2026-04-30,11
+C059,Navigation,25,31,59,2026-04-16,14
+C059,Meteorology,6,23,46,2026-05-12,6
+C059,Technical General,28,34,51,2026-05-14,9
+C060,Technical General,28,31,81,2026-05-07,8
+C060,Human Performance,27,36,75,2026-04-23,7
+C060,Flight Planning,5,36,50,2026-05-09,5
+C061,Technical General,19,38,83,2026-05-01,9
+C061,Flight Planning,35,36,48,2026-04-20,4
+C061,Navigation,19,27,82,2026-05-05,11
+C062,Meteorology,25,39,94,2026-05-15,0
+C062,Human Performance,23,28,73,2026-05-11,0
+C062,Navigation,3,24,79,2026-05-14,3
+C063,Technical General,21,30,72,2026-04-23,15
+C063,Flight Planning,24,29,38,2026-04-19,14
+C063,Radio Telephony,25,40,47,2026-04-25,0
+C064,Human Performance,30,38,55,2026-04-17,8
+C064,Air Regulations,18,24,42,2026-05-10,11
+C064,Navigation,6,37,86,2026-05-01,0
+C065,Technical General,7,20,91,2026-05-03,3
+C065,Radio Telephony,7,31,80,2026-04-23,9
+C065,Flight Planning,19,34,78,2026-04-28,3
+C066,Air Regulations,32,33,69,2026-04-22,14
+C066,Technical General,6,30,80,2026-05-02,9
+C066,Meteorology,16,22,48,2026-04-23,9
+C067,Human Performance,10,25,60,2026-05-15,13
+C067,Navigation,25,30,72,2026-04-17,2
+C067,Radio Telephony,20,21,48,2026-04-28,10
+C068,Navigation,24,38,45,2026-04-19,15
+C068,Technical General,29,32,59,2026-05-09,11
+C068,Meteorology,33,40,53,2026-05-04,15
+C069,Flight Planning,6,23,40,2026-04-16,3
+C069,Radio Telephony,9,24,36,2026-04-18,12
+C069,Navigation,11,21,49,2026-04-24,3
+C070,Human Performance,4,22,58,2026-04-29,13
+C070,Meteorology,10,28,43,2026-04-25,10
+C070,Navigation,28,30,73,2026-05-12,10
+C071,Meteorology,9,37,46,2026-04-15,6
+C071,Air Regulations,32,40,91,2026-04-27,15
+C071,Radio Telephony,9,33,86,2026-04-26,4
+C072,Navigation,10,36,41,2026-04-29,1
+C072,Meteorology,8,24,52,2026-05-13,15
+C072,Air Regulations,17,27,73,2026-04-25,0
+C073,Flight Planning,18,39,35,2026-05-06,14
+C073,Radio Telephony,5,32,46,2026-04-19,11
+C073,Human Performance,32,37,35,2026-04-20,1
+C074,Navigation,7,25,73,2026-05-03,1
+C074,Flight Planning,17,29,72,2026-05-11,0
+C074,Technical General,10,21,82,2026-04-26,1
+C075,Flight Planning,17,29,56,2026-05-05,0
+C075,Technical General,23,30,45,2026-04-26,5
+C075,Human Performance,20,37,91,2026-04-26,5
+C076,Technical General,25,29,92,2026-05-13,7
+C076,Navigation,15,27,92,2026-05-14,2
+C076,Air Regulations,31,39,89,2026-05-06,15
+C077,Navigation,23,30,70,2026-04-22,14
+C077,Flight Planning,10,38,47,2026-04-24,15
+C077,Radio Telephony,8,26,63,2026-04-21,12
+C078,Navigation,20,23,45,2026-04-20,0
+C078,Meteorology,19,31,46,2026-04-15,10
+C078,Air Regulations,16,31,50,2026-05-10,8
+C079,Meteorology,15,22,87,2026-04-30,1
+C079,Radio Telephony,13,33,59,2026-04-16,3
+C079,Air Regulations,14,25,87,2026-05-09,11
+C080,Flight Planning,11,27,84,2026-05-03,1
+C080,Navigation,18,26,40,2026-05-01,10
+C080,Human Performance,24,24,39,2026-05-09,7
+C081,Navigation,23,29,64,2026-05-11,11
+C081,Human Performance,14,20,80,2026-04-16,10
+C081,Meteorology,29,33,39,2026-05-10,13
+C082,Technical General,22,36,82,2026-05-12,14
+C082,Meteorology,33,35,68,2026-04-30,10
+C082,Air Regulations,29,40,46,2026-04-29,8
+C083,Radio Telephony,24,26,43,2026-05-03,13
+C083,Human Performance,14,23,83,2026-04-20,6
+C083,Air Regulations,22,37,64,2026-04-16,15
+C084,Radio Telephony,8,22,86,2026-05-10,0
+C084,Meteorology,16,29,45,2026-05-03,6
+C084,Technical General,14,39,77,2026-05-10,4
+C085,Navigation,7,31,76,2026-04-28,14
+C085,Human Performance,33,40,44,2026-04-24,3
+C085,Meteorology,9,31,70,2026-05-13,11
+C086,Human Performance,3,32,89,2026-04-24,12
+C086,Meteorology,36,37,61,2026-05-05,2
+C086,Flight Planning,17,20,89,2026-05-04,15
+C087,Technical General,2,23,45,2026-04-21,8
+C087,Radio Telephony,2,20,56,2026-04-22,7
+C087,Flight Planning,34,35,70,2026-04-19,12
+C088,Technical General,11,21,59,2026-04-21,9
+C088,Meteorology,9,36,37,2026-04-27,12
+C088,Air Regulations,11,29,65,2026-04-24,11
+C089,Technical General,5,33,67,2026-04-20,15
+C089,Human Performance,18,35,71,2026-04-16,11
+C089,Air Regulations,11,23,67,2026-05-13,15
+C090,Human Performance,15,39,50,2026-04-18,6
+C090,Radio Telephony,29,29,45,2026-04-15,7
+C090,Meteorology,4,39,84,2026-04-25,11
+C091,Technical General,18,28,75,2026-04-29,9
+C091,Flight Planning,17,22,92,2026-04-25,4
+C091,Human Performance,25,25,67,2026-04-18,1
+C092,Navigation,4,36,68,2026-04-20,3
+C092,Air Regulations,18,20,53,2026-05-12,1
+C092,Radio Telephony,18,20,74,2026-05-09,3
+C093,Air Regulations,6,40,52,2026-05-05,1
+C093,Flight Planning,11,31,87,2026-05-10,4
+C093,Navigation,24,24,59,2026-04-20,5
+C094,Air Regulations,2,21,78,2026-04-27,13
+C094,Meteorology,14,23,57,2026-04-18,1
+C094,Human Performance,17,31,43,2026-05-15,9
+C095,Meteorology,27,33,65,2026-04-16,6
+C095,Radio Telephony,17,30,78,2026-04-23,6
+C095,Human Performance,39,40,58,2026-04-25,0
+C096,Meteorology,27,40,86,2026-04-18,2
+C096,Radio Telephony,2,24,38,2026-05-08,7
+C096,Navigation,14,25,46,2026-05-07,1
+C097,Radio Telephony,19,28,52,2026-04-21,2
+C097,Meteorology,9,24,77,2026-05-15,1
+C097,Flight Planning,19,21,70,2026-04-15,3
+C098,Technical General,21,36,36,2026-04-15,0
+C098,Air Regulations,4,24,80,2026-04-30,8
+C098,Human Performance,18,21,64,2026-04-17,6
+C099,Flight Planning,18,31,51,2026-04-23,9
+C099,Navigation,10,38,76,2026-04-25,11
+C099,Technical General,10,38,50,2026-05-07,12
+C100,Air Regulations,23,23,67,2026-04-23,4
+C100,Flight Planning,27,38,94,2026-05-03,15
+C100,Technical General,15,36,72,2026-04-24,5
+C101,Human Performance,2,29,65,2026-04-25,11
+C101,Technical General,40,40,52,2026-05-01,9
+C101,Flight Planning,18,30,86,2026-05-11,14
+C102,Meteorology,21,23,47,2026-04-23,15
+C102,Flight Planning,11,24,94,2026-04-19,0
+C102,Human Performance,13,21,41,2026-05-11,5
+C103,Radio Telephony,12,25,94,2026-05-15,5
+C103,Technical General,7,23,86,2026-04-15,11
+C103,Air Regulations,22,31,71,2026-05-12,15
+C104,Radio Telephony,33,35,40,2026-04-15,8
+C104,Human Performance,24,25,57,2026-04-22,0
+C104,Navigation,8,35,56,2026-04-23,4
+C105,Meteorology,12,35,69,2026-04-25,10
+C105,Air Regulations,32,36,71,2026-04-26,5
+C105,Radio Telephony,24,27,75,2026-04-25,9
+C106,Navigation,5,23,43,2026-04-29,8
+C106,Air Regulations,8,35,71,2026-04-16,9
+C106,Flight Planning,11,22,40,2026-05-01,15
+C107,Air Regulations,5,20,93,2026-04-21,13
+C107,Flight Planning,25,37,73,2026-04-23,5
+C107,Navigation,18,34,55,2026-04-30,0
+C108,Radio Telephony,9,36,83,2026-05-07,2
+C108,Meteorology,30,39,89,2026-04-24,15
+C108,Flight Planning,21,40,35,2026-05-09,0
+C109,Navigation,15,35,59,2026-04-20,7
+C109,Technical General,25,28,87,2026-04-19,8
+C109,Meteorology,29,40,36,2026-04-19,3
+C110,Air Regulations,16,32,45,2026-05-10,4
+C110,Meteorology,19,37,47,2026-04-27,2
+C110,Radio Telephony,31,31,85,2026-05-12,5
+C111,Navigation,15,31,86,2026-04-26,12
+C111,Flight Planning,24,39,73,2026-05-14,6
+C111,Radio Telephony,2,27,72,2026-04-29,15
+C112,Meteorology,14,21,95,2026-04-19,11
+C112,Technical General,10,24,78,2026-05-03,11
+C112,Human Performance,21,29,46,2026-04-18,7
+C113,Air Regulations,27,27,79,2026-05-10,5
+C113,Technical General,9,20,89,2026-05-09,4
+C113,Navigation,4,20,76,2026-04-17,15
+C114,Human Performance,9,22,81,2026-04-19,8
+C114,Technical General,3,26,69,2026-05-11,1
+C114,Meteorology,7,24,44,2026-05-02,13
+C115,Flight Planning,9,34,42,2026-05-14,6
+C115,Navigation,14,38,59,2026-04-18,4
+C115,Technical General,3,39,68,2026-04-27,15
+C116,Flight Planning,38,38,48,2026-05-05,11
+C116,Navigation,12,31,46,2026-04-16,3
+C116,Air Regulations,28,33,38,2026-04-16,5
+C117,Technical General,4,20,83,2026-04-21,15
+C117,Meteorology,4,23,87,2026-05-05,12
+C117,Radio Telephony,21,32,81,2026-05-05,7
+C118,Navigation,11,27,60,2026-04-20,2
+C118,Air Regulations,24,24,56,2026-04-22,3
+C118,Flight Planning,19,36,51,2026-05-13,10
+C119,Meteorology,14,31,82,2026-05-11,11
+C119,Human Performance,14,21,41,2026-05-10,0
+C119,Radio Telephony,23,38,66,2026-04-18,0
+C120,Meteorology,19,30,38,2026-05-08,6
+C120,Radio Telephony,10,23,48,2026-05-07,10
+C120,Technical General,15,32,83,2026-04-21,15
+C121,Human Performance,17,25,72,2026-04-24,3
+C121,Air Regulations,24,39,57,2026-04-25,7
+C121,Technical General,8,37,79,2026-05-04,9
+C122,Air Regulations,34,35,55,2026-04-20,0
+C122,Technical General,28,30,64,2026-04-15,15
+C122,Human Performance,6,20,94,2026-04-23,0
+C123,Radio Telephony,21,27,68,2026-04-24,6
+C123,Navigation,15,22,79,2026-04-29,9
+C123,Technical General,2,23,89,2026-04-17,4
+C124,Navigation,28,30,75,2026-04-23,12
+C124,Meteorology,21,33,70,2026-05-15,15
+C124,Air Regulations,14,28,61,2026-04-21,12
+C125,Navigation,13,23,79,2026-05-14,15
+C125,Meteorology,22,27,86,2026-05-07,8
+C125,Radio Telephony,17,37,63,2026-05-15,11
+C126,Technical General,32,40,95,2026-05-09,11
+C126,Meteorology,16,28,47,2026-04-26,9
+C126,Air Regulations,18,30,71,2026-04-27,9
+C127,Navigation,26,27,74,2026-04-30,6
+C127,Technical General,4,25,89,2026-05-06,13
+C127,Flight Planning,23,27,35,2026-05-15,2
+C128,Air Regulations,6,24,68,2026-04-17,10
+C128,Technical General,24,31,40,2026-04-25,3
+C128,Human Performance,26,35,90,2026-04-23,12
+C129,Radio Telephony,4,35,91,2026-04-21,13
+C129,Technical General,25,30,46,2026-04-23,2
+C129,Meteorology,16,27,37,2026-04-26,1
+C130,Technical General,16,21,57,2026-04-27,10
+C130,Human Performance,16,20,92,2026-05-08,4
+C130,Flight Planning,7,33,88,2026-05-12,6
+C131,Radio Telephony,23,28,56,2026-04-21,1
+C131,Flight Planning,6,27,39,2026-05-05,1
+C131,Navigation,14,37,95,2026-05-01,1
+C132,Navigation,21,35,65,2026-05-06,13
+C132,Technical General,19,35,73,2026-04-15,0
+C132,Air Regulations,11,27,44,2026-04-26,3
+C133,Human Performance,8,27,61,2026-04-19,1
+C133,Flight Planning,9,23,66,2026-05-03,13
+C133,Navigation,29,36,51,2026-05-12,6
+C134,Human Performance,3,37,79,2026-04-28,12
+C134,Radio Telephony,4,32,51,2026-05-10,11
+C134,Meteorology,6,24,94,2026-04-23,11
+C135,Human Performance,24,25,74,2026-04-16,9
+C135,Flight Planning,16,29,75,2026-05-08,12
+C135,Radio Telephony,18,28,50,2026-04-17,9
+C136,Navigation,25,31,71,2026-04-27,2
+C136,Radio Telephony,12,35,37,2026-04-22,13
+C136,Technical General,3,23,53,2026-05-14,4
+C137,Navigation,19,26,93,2026-04-25,2
+C137,Air Regulations,16,33,84,2026-05-13,3
+C137,Meteorology,23,23,65,2026-04-23,7
+C138,Radio Telephony,12,24,59,2026-04-21,10
+C138,Technical General,18,24,74,2026-04-23,11
+C138,Meteorology,13,28,49,2026-05-01,15
+C139,Flight Planning,9,21,80,2026-04-19,10
+C139,Technical General,14,40,42,2026-04-24,1
+C139,Meteorology,16,39,92,2026-05-11,10
+C140,Navigation,38,38,85,2026-05-11,9
+C140,Radio Telephony,8,20,76,2026-04-29,4
+C140,Meteorology,23,25,72,2026-05-10,10
+C141,Meteorology,2,40,94,2026-04-21,12
+C141,Radio Telephony,29,32,76,2026-04-18,9
+C141,Technical General,9,27,89,2026-05-12,2
+C142,Radio Telephony,13,24,48,2026-04-19,1
+C142,Technical General,32,33,36,2026-04-22,11
+C142,Air Regulations,4,27,36,2026-04-20,2
+C143,Flight Planning,19,28,48,2026-04-17,11
+C143,Human Performance,2,24,71,2026-04-20,4
+C143,Navigation,16,24,63,2026-05-12,2
+C144,Air Regulations,11,20,76,2026-05-15,8
+C144,Radio Telephony,22,27,71,2026-05-15,11
+C144,Meteorology,11,30,49,2026-04-15,13
+C145,Human Performance,7,28,44,2026-05-12,8
+C145,Flight Planning,11,34,63,2026-05-01,6
+C145,Navigation,24,27,64,2026-04-21,8
+C146,Flight Planning,9,25,45,2026-04-18,1
+C146,Human Performance,17,37,89,2026-05-08,9
+C146,Meteorology,16,24,53,2026-05-04,13
+C147,Flight Planning,14,29,89,2026-05-01,6
+C147,Meteorology,20,38,58,2026-04-27,8
+C147,Radio Telephony,13,38,52,2026-04-19,0
+C148,Radio Telephony,5,23,94,2026-04-20,3
+C148,Technical General,11,36,80,2026-05-10,5
+C148,Navigation,7,20,39,2026-05-04,7
+C149,Navigation,17,26,90,2026-05-12,5
+C149,Air Regulations,17,20,55,2026-04-28,1
+C149,Technical General,27,29,69,2026-05-08,5
+C150,Air Regulations,31,36,56,2026-05-10,4
+C150,Human Performance,8,29,51,2026-04-19,8
+C150,Radio Telephony,16,32,39,2026-04-28,15

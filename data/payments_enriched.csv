@@ -1,0 +1,151 @@
+cadet_id,invoiced_amount,paid_amount,outstanding_amount,last_payment_date,expected_outstanding,calc_error,payment_completion_pct,outstanding_ratio,days_since_payment,payment_risk_score,risk_level,reason,name,course
+C001,627928,212903,415025,2026-04-08,415025,False,33.91,0.6609,37,64.76,Medium,Only 34% fees paid,Sanya Verma,CPL
+C002,220548,104968,115580,2026-03-24,115580,False,47.59,0.5241,52,62.69,Medium,52d since last payment,Sanya Gupta,CPL
+C003,470452,384941,85511,2026-03-24,85511,False,81.82,0.1818,52,38.73,Low,52d since last payment,Ishaan Bose,PPL
+C004,291422,97492,193930,2026-04-15,193930,False,33.45,0.6655,30,61.58,Medium,Only 33% fees paid,Vikram Malhotra,PPL
+C005,694930,313042,381888,2026-04-09,381888,False,45.05,0.5495,36,56.46,Medium,Within acceptable range,Sneha Sharma,PPL
+C006,661838,210048,461290,2026-04-30,451790,True,31.74,0.697,15,,DATA ERROR,Data integrity error — manual review required,Tanya Nair,PPL
+C007,152234,78610,73624,2026-04-30,73624,False,51.64,0.4836,15,41.35,Medium,Within acceptable range,Rohan Iyer,CPL
+C008,690404,267766,422638,2026-05-11,422638,False,38.78,0.6122,4,44.85,Medium,Only 39% fees paid,Priya Kapoor,CPL
+C009,167823,138644,29179,2026-03-20,29179,False,82.61,0.1739,56,40.17,Medium,56d since last payment,Rahul Kapoor,CPL
+C010,587753,304857,282896,2026-04-23,282896,False,51.87,0.4813,22,44.69,Medium,Within acceptable range,Dev Kapoor,PPL
+C011,172512,54417,118095,2026-04-02,118095,False,31.54,0.6846,43,69.42,Medium,Only 32% fees paid,Sanya Gupta,CPL
+C012,153764,107175,46589,2026-03-17,46589,False,69.7,0.303,59,50.71,Medium,59d since last payment,Aditi Pillai,CPL
+C013,416884,332095,84789,2026-03-22,84789,False,79.66,0.2034,54,41.24,Medium,54d since last payment,Dev Gupta,PPL
+C014,443761,360198,83563,2026-03-30,83563,False,81.17,0.1883,46,36.18,Low,46d since last payment,Sneha Rao,CPL
+C015,497691,418835,78856,2026-03-24,78856,False,84.16,0.1584,52,37.09,Low,52d since last payment,Ananya Joshi,PPL
+C016,230191,141639,88552,2026-04-29,88552,False,61.53,0.3847,16,34.93,Low,Within acceptable range,Ishaan Patel,CPL
+C017,390320,249544,140776,2026-04-19,140776,False,63.93,0.3607,26,38.25,Low,Within acceptable range,Kiran Kapoor,PPL
+C018,229409,172875,56534,2026-05-14,56534,False,75.36,0.2464,1,17.75,Low,Within acceptable range,Ananya Patel,CPL
+C019,311191,133700,177491,2026-04-20,177491,False,42.96,0.5704,25,52.43,Medium,Within acceptable range,Ananya Sharma,CPL
+C020,190664,171114,19550,2026-04-22,19550,False,89.75,0.1025,23,18.68,Low,Within acceptable range,Kiran Sharma,CPL
+C021,152000,90163,61837,2026-03-30,61837,False,59.32,0.4068,46,51.48,Medium,46d since last payment,Aditya Singh,CPL
+C022,596497,357954,238543,2026-04-09,238543,False,60.01,0.3999,36,45.99,Medium,Within acceptable range,Aryan Tripathi,CPL
+C023,470013,281781,181032,2026-05-06,188232,True,59.95,0.3852,9,,DATA ERROR,Data integrity error — manual review required,Divya Chaudhary,CPL
+C024,153251,38490,114761,2026-04-07,114761,False,25.12,0.7488,38,71.42,High,High outstanding ratio 75%; Only 25% fees paid,Arjun Singh,PPL
+C025,441637,137116,304521,2026-03-21,304521,False,31.05,0.6895,55,75.76,High,55d since last payment; Only 31% fees paid,Kabir Kapoor,PPL
+C026,651213,403649,247564,2026-03-29,247564,False,61.98,0.3802,47,50.11,Medium,47d since last payment,Dev Sharma,CPL
+C027,475550,290619,184931,2026-04-23,184931,False,61.11,0.3889,22,38.22,Low,Within acceptable range,Aditi Kapoor,PPL
+C028,657927,440840,217087,2026-04-03,217087,False,67.0,0.33,42,44.1,Medium,Within acceptable range,Kabir Malhotra,PPL
+C029,224138,184143,39995,2026-03-26,39995,False,82.16,0.1784,50,37.49,Low,50d since last payment,Tanya Gupta,CPL
+C030,630039,304637,325402,2026-03-25,325402,False,48.35,0.5165,51,61.66,Medium,51d since last payment,Aditya Bose,CPL
+C031,675931,484489,191442,2026-04-25,191442,False,71.68,0.2832,20,29.82,Low,Within acceptable range,Ananya Pillai,CPL
+C032,404952,267852,137100,2026-05-02,137100,False,66.14,0.3386,13,30.2,Low,Within acceptable range,Rohan Malhotra,PPL
+C033,462943,137268,325675,2026-04-04,325675,False,29.65,0.7035,41,69.75,Medium,High outstanding ratio 70%; Only 30% fees paid,Neha Verma,CPL
+C034,606556,476201,130355,2026-04-09,130355,False,78.51,0.2149,36,33.04,Low,Within acceptable range,Aditya Malhotra,PPL
+C035,343399,171192,172207,2026-04-11,172207,False,49.85,0.5015,34,52.1,Medium,Within acceptable range,Dev Singh,PPL
+C036,238773,193038,45735,2026-05-13,45735,False,80.85,0.1915,2,14.4,Low,Within acceptable range,Vikram Malhotra,PPL
+C037,641824,576625,65199,2026-03-24,65199,False,89.84,0.1016,52,33.11,Low,52d since last payment,Harsh Srivastava,CPL
+C038,449706,127152,322554,2026-04-27,322554,False,28.27,0.7173,18,59.21,Medium,High outstanding ratio 72%; Only 28% fees paid,Aditi Verma,CPL
+C039,480452,304852,175600,2026-03-18,175600,False,63.45,0.3655,58,54.58,Medium,58d since last payment,Nikhil Menon,PPL
+C040,412185,369070,43115,2026-03-28,43115,False,89.54,0.1046,48,31.32,Low,48d since last payment,Sanya Menon,PPL
+C041,276232,197653,78579,2026-03-31,78579,False,71.55,0.2845,45,42.41,Medium,Within acceptable range,Rahul Nair,PPL
+C042,371951,371879,72,2026-04-26,72,False,99.98,0.0002,19,9.51,Low,Within acceptable range,Rohan Gupta,PPL
+C043,321928,230574,91354,2026-05-03,91354,False,71.62,0.2838,12,25.87,Low,Within acceptable range,Kabir Nair,PPL
+C044,296484,135435,161049,2026-03-30,161049,False,45.68,0.5432,46,61.02,Medium,46d since last payment,Priya Menon,CPL
+C045,417641,213382,204259,2026-04-19,204259,False,51.09,0.4891,26,47.24,Medium,Within acceptable range,Vikram Sharma,PPL
+C046,687993,471598,216395,2026-04-30,216395,False,68.55,0.3145,15,29.52,Low,Within acceptable range,Ishaan Nair,CPL
+C047,241058,114605,126453,2026-04-24,126453,False,47.54,0.5246,21,47.22,Medium,Within acceptable range,Tanya Bose,PPL
+C048,492876,233896,258980,2026-03-25,258980,False,47.46,0.5254,51,62.28,Medium,51d since last payment,Pooja Pandey,PPL
+C049,681657,593321,88336,2026-03-27,88336,False,87.04,0.1296,49,33.57,Low,49d since last payment,Ravi Shukla,PPL
+C050,442962,322342,120620,2026-04-09,120620,False,72.77,0.2723,36,37.06,Low,Within acceptable range,Neha Sharma,CPL
+C051,275949,179858,96091,2026-05-01,96091,False,65.18,0.3482,14,31.37,Low,Within acceptable range,Rahul Patel,PPL
+C052,499026,356985,142041,2026-05-01,142041,False,71.54,0.2846,14,26.92,Low,Within acceptable range,Nikhil Kapoor,PPL
+C053,412534,112432,300102,2026-05-02,300102,False,27.25,0.7275,13,57.43,Medium,High outstanding ratio 73%; Only 27% fees paid,Nikhil Gupta,PPL
+C054,685993,574106,111887,2026-05-05,111887,False,83.69,0.1631,10,16.42,Low,Within acceptable range,Nikhil Malhotra,PPL
+C055,508738,133139,375599,2026-04-01,375599,False,26.17,0.7383,44,73.68,High,High outstanding ratio 74%; Only 26% fees paid,Tanya Kapoor,CPL
+C056,670754,239282,431472,2026-04-08,431472,False,35.67,0.6433,37,63.53,Medium,Only 36% fees paid,Neha Rao,CPL
+C057,550002,455089,94913,2026-03-23,94913,False,82.74,0.1726,53,38.58,Low,53d since last payment,Dev Pillai,CPL
+C058,391416,179494,211922,2026-05-03,211922,False,45.86,0.5414,12,43.9,Medium,Within acceptable range,Rohan Nair,PPL
+C059,442074,218139,223935,2026-04-17,223935,False,49.34,0.5066,28,49.46,Medium,Within acceptable range,Sunita Tiwari,PPL
+C060,500371,213956,286415,2026-03-17,286415,False,42.76,0.5724,59,69.57,Medium,59d since last payment,Gaurav Mishra,CPL
+C061,525568,373416,152152,2026-04-16,152152,False,71.05,0.2895,29,34.77,Low,Within acceptable range,Rohan Singh,PPL
+C062,637575,183798,453777,2026-03-19,453777,False,28.83,0.7117,57,78.32,High,High outstanding ratio 71%; 57d since last payment; Only 29% fees paid,Nidhi Dwivedi,PPL
+C063,430942,226830,204112,2026-04-19,204112,False,52.64,0.4736,26,46.15,Medium,Within acceptable range,Sanya Singh,CPL
+C064,276346,224404,51942,2026-04-29,51942,False,81.2,0.188,16,21.16,Low,Within acceptable range,Neha Nair,PPL
+C065,366578,348258,18320,2026-04-27,18320,False,95.0,0.05,18,12.5,Low,Within acceptable range,Rohan Joshi,PPL
+C066,586407,573969,12438,2026-04-19,12438,False,97.88,0.0212,26,14.48,Low,Within acceptable range,Sneha Singh,CPL
+C067,194458,192447,2011,2026-04-27,2011,False,98.97,0.0103,18,9.72,Low,Within acceptable range,Sanya Malhotra,CPL
+C068,205400,74173,144227,2026-04-29,131227,True,36.11,0.7022,16,,DATA ERROR,Data integrity error — manual review required,Kabir Iyer,CPL
+C069,521201,204764,316437,2026-03-17,316437,False,39.29,0.6071,59,72.0,High,59d since last payment; Only 39% fees paid,Nikhil Joshi,CPL
+C070,153044,104490,48554,2026-04-23,48554,False,68.27,0.3173,22,33.21,Low,Within acceptable range,Vikram Singh,PPL
+C071,586390,565486,20904,2026-05-11,20904,False,96.44,0.0356,4,4.49,Low,Within acceptable range,Meera Pillai,CPL
+C072,294553,156253,138300,2026-05-15,138300,False,53.05,0.4695,0,32.86,Low,Within acceptable range,Rohan Menon,PPL
+C073,158167,133764,24403,2026-04-06,24403,False,84.57,0.1543,39,30.3,Low,Within acceptable range,Sneha Gupta,CPL
+C074,697338,245800,451538,2026-03-30,451538,False,35.25,0.6475,46,68.33,Medium,46d since last payment; Only 35% fees paid,Tarun Agrawal,PPL
+C075,162222,123421,38801,2026-05-01,38801,False,76.08,0.2392,14,23.74,Low,Within acceptable range,Ishaan Verma,PPL
+C076,676070,571164,104906,2026-04-22,104906,False,84.48,0.1552,23,22.36,Low,Within acceptable range,Kabir Rao,PPL
+C077,644554,214326,430228,2026-03-27,430228,False,33.25,0.6675,49,71.22,High,49d since last payment; Only 33% fees paid,Sanya Nair,CPL
+C078,498753,126204,372549,2026-04-29,372549,False,25.3,0.747,16,60.29,Medium,High outstanding ratio 75%; Only 25% fees paid,Rohan Kapoor,CPL
+C079,330385,114562,215823,2026-03-28,215823,False,34.68,0.6532,48,69.72,Medium,48d since last payment; Only 35% fees paid,Arjun Kapoor,PPL
+C080,462629,220413,242216,2026-04-04,242216,False,47.64,0.5236,41,57.15,Medium,Within acceptable range,Ananya Nair,CPL
+C081,551387,246341,305046,2026-03-16,305046,False,44.68,0.5532,60,68.72,Medium,60d since last payment,Aditya Sharma,CPL
+C082,553652,491003,62649,2026-03-21,62649,False,88.68,0.1132,55,35.42,Low,55d since last payment,Sanya Rao,PPL
+C083,506667,211288,295379,2026-04-01,295379,False,41.7,0.583,44,62.81,Medium,Within acceptable range,Swati Jain,CPL
+C084,310699,116435,194264,2026-03-17,194264,False,37.48,0.6252,59,73.26,High,59d since last payment; Only 37% fees paid,Vikram Nair,PPL
+C085,348451,282916,65535,2026-05-13,65535,False,81.19,0.1881,2,14.17,Low,Within acceptable range,Priya Gupta,CPL
+C086,633538,535742,97796,2026-03-25,97796,False,84.56,0.1544,51,36.31,Low,51d since last payment,Arjun Sharma,CPL
+C087,492159,374831,117328,2026-03-26,117328,False,76.16,0.2384,50,41.69,Medium,50d since last payment,Manish Shah,PPL
+C088,538990,381534,157456,2026-04-20,157456,False,70.79,0.2921,25,32.95,Low,Within acceptable range,Priya Bose,CPL
+C089,178348,99718,78630,2026-04-14,78630,False,55.91,0.4409,31,46.36,Medium,Within acceptable range,Shruti Mehta,PPL
+C090,257443,131345,126098,2026-04-27,126098,False,51.02,0.4898,18,43.29,Medium,Within acceptable range,Aditi Gupta,CPL
+C091,325028,153991,171037,2026-04-24,171037,False,47.38,0.5262,21,47.33,Medium,Within acceptable range,Vivek Desai,PPL
+C092,481903,329373,152530,2026-03-24,152530,False,68.35,0.3165,52,48.16,Medium,52d since last payment,Aditya Nair,PPL
+C093,555991,396541,159450,2026-04-28,159450,False,71.32,0.2868,17,28.58,Low,Within acceptable range,Kiran Malhotra,PPL
+C094,224253,181612,42641,2026-05-04,42641,False,80.99,0.1901,11,18.81,Low,Within acceptable range,Ananya Menon,CPL
+C095,195119,165000,30119,2026-03-25,30119,False,84.56,0.1544,51,36.31,Low,51d since last payment,Priya Iyer,PPL
+C096,523656,491421,32235,2026-04-17,32235,False,93.84,0.0616,28,18.31,Low,Within acceptable range,Sanya Gupta,PPL
+C097,629058,495646,133412,2026-03-19,133412,False,78.79,0.2121,57,43.35,Medium,57d since last payment,Deepa Patil,PPL
+C098,286544,88936,197608,2026-03-24,197608,False,31.04,0.6896,52,74.27,High,52d since last payment; Only 31% fees paid,Kunal Kulkarni,PPL
+C099,532404,461985,70419,2026-04-19,70419,False,86.77,0.1323,26,22.26,Low,Within acceptable range,Tanya Verma,CPL
+C100,271578,253872,17706,2026-04-15,17706,False,93.48,0.0652,30,19.56,Low,Within acceptable range,Rahul Gupta,CPL
+C101,483533,459209,24324,2026-04-25,24324,False,94.97,0.0503,20,13.52,Low,Within acceptable range,Priti Pawar,PPL
+C102,340937,120593,215544,2026-04-10,220344,True,35.37,0.6322,35,,DATA ERROR,Data integrity error — manual review required,Rohan Sharma,PPL
+C103,518314,494043,24271,2026-04-27,24271,False,95.32,0.0468,18,12.28,Low,Within acceptable range,Sameer Bhosale,CPL
+C104,265073,88887,176186,2026-03-27,176186,False,33.53,0.6647,49,71.03,High,49d since last payment; Only 34% fees paid,Anjali Kale,CPL
+C105,198536,82983,115553,2026-05-01,115553,False,41.8,0.582,14,47.74,Medium,Within acceptable range,Arjun Malhotra,CPL
+C106,503889,314409,189480,2026-04-10,189480,False,62.4,0.376,35,43.82,Medium,Within acceptable range,Rahul Malhotra,CPL
+C107,658155,203399,454756,2026-03-26,454756,False,30.9,0.691,50,73.37,High,50d since last payment; Only 31% fees paid,Nikhil Pillai,CPL
+C108,366354,256473,109881,2026-04-08,109881,False,70.01,0.2999,37,39.49,Low,Within acceptable range,Akash Naik,PPL
+C109,374455,138721,235734,2026-03-23,235734,False,37.05,0.6295,53,70.56,High,53d since last payment; Only 37% fees paid,Priya Sharma,CPL
+C110,675643,578046,97597,2026-03-27,97597,False,85.55,0.1445,49,34.62,Low,49d since last payment,Dev Bose,PPL
+C111,227870,208245,19625,2026-05-07,19625,False,91.39,0.0861,8,10.03,Low,Within acceptable range,Kabir Pillai,PPL
+C112,214490,58642,155848,2026-04-05,155848,False,27.34,0.7266,40,70.86,High,High outstanding ratio 73%; Only 27% fees paid,Arjun Pillai,CPL
+C113,153580,62853,90727,2026-05-15,90727,False,40.93,0.5907,0,41.35,Medium,Within acceptable range,Neha Patel,PPL
+C114,490407,345045,145362,2026-03-30,145362,False,70.36,0.2964,46,43.75,Medium,46d since last payment,Vikram Malhotra,CPL
+C115,347082,190649,156433,2026-04-26,156433,False,54.93,0.4507,19,41.05,Medium,Within acceptable range,Smita Hegde,CPL
+C116,271865,80957,190908,2026-04-09,190908,False,29.78,0.7022,36,67.15,Medium,High outstanding ratio 70%; Only 30% fees paid,Varun Shetty,PPL
+C117,573538,396493,177045,2026-04-24,177045,False,69.13,0.3087,21,32.11,Low,Within acceptable range,Nikhil Patel,PPL
+C118,237848,80332,157516,2026-04-17,157516,False,33.77,0.6623,28,60.36,Medium,Only 34% fees paid,Sneha Malhotra,CPL
+C119,493031,230544,262487,2026-04-24,262487,False,46.76,0.5324,21,47.77,Medium,Within acceptable range,Ishaan Iyer,PPL
+C120,393118,213573,179545,2026-03-18,179545,False,54.33,0.4567,58,60.97,Medium,58d since last payment,Puja Bhat,CPL
+C121,643363,186975,456388,2026-04-05,456388,False,29.06,0.7094,40,69.66,Medium,High outstanding ratio 71%; Only 29% fees paid,Vikram Malhotra,CPL
+C122,328141,179746,148395,2026-04-25,148395,False,54.78,0.4522,20,41.65,Medium,Within acceptable range,Girish Kamath,CPL
+C123,354550,238102,116448,2026-04-03,116448,False,67.16,0.3284,42,43.99,Medium,Within acceptable range,Rahul Sharma,CPL
+C124,479070,476562,2508,2026-05-15,2508,False,99.48,0.0052,0,0.36,Low,Within acceptable range,Lata Nambiar,CPL
+C125,183643,69430,114213,2026-04-17,114213,False,37.81,0.6219,28,57.53,Medium,Only 38% fees paid,Kabir Singh,PPL
+C126,217380,198408,18972,2026-04-29,18972,False,91.27,0.0873,16,14.11,Low,Within acceptable range,Kiran Joshi,PPL
+C127,263902,235056,28846,2026-04-17,28846,False,89.07,0.1093,28,21.65,Low,Within acceptable range,Rahul Patel,CPL
+C128,210747,151578,59169,2026-05-03,59169,False,71.92,0.2808,12,25.66,Low,Within acceptable range,Kiran Menon,CPL
+C129,248129,220472,27657,2026-05-09,27657,False,88.85,0.1115,6,10.8,Low,Within acceptable range,Naveen Thampi,PPL
+C130,411142,371892,39250,2026-04-19,39250,False,90.45,0.0955,26,19.68,Low,Within acceptable range,Meera Bose,CPL
+C131,675618,421549,254069,2026-03-18,254069,False,62.39,0.3761,58,55.33,Medium,58d since last payment,Seema Kutty,CPL
+C132,672317,461366,210951,2026-05-08,210951,False,68.62,0.3138,7,25.47,Low,Within acceptable range,Aditya Pillai,PPL
+C133,263846,254320,9526,2026-04-11,9526,False,96.39,0.0361,34,19.53,Low,Within acceptable range,Paresh Subramaniam,PPL
+C134,384472,373721,10751,2026-05-08,10751,False,97.2,0.028,7,5.46,Low,Within acceptable range,Meera Iyer,PPL
+C135,548522,284844,263678,2026-05-14,263678,False,51.93,0.4807,1,34.15,Low,Within acceptable range,Kiran Bose,CPL
+C136,553673,367617,186056,2026-04-09,186056,False,66.4,0.336,36,41.52,Medium,Within acceptable range,Anita Krishnamurthy,PPL
+C137,529320,423631,105689,2026-05-01,105689,False,80.03,0.1997,14,20.98,Low,Within acceptable range,Sneha Nair,PPL
+C138,337956,295419,42537,2026-04-04,42537,False,87.41,0.1259,41,29.31,Low,Within acceptable range,Tanya Menon,PPL
+C139,553322,182466,370856,2026-04-17,370856,False,32.98,0.6702,28,60.91,Medium,Only 33% fees paid,Suresh Venkatesan,CPL
+C140,647702,191334,456368,2026-03-23,456368,False,29.54,0.7046,53,75.82,High,High outstanding ratio 70%; 53d since last payment; Only 30% fees paid,Geeta Raman,PPL
+C141,401734,228916,172818,2026-03-16,172818,False,56.98,0.4302,60,60.11,Medium,60d since last payment,Vinod Gopal,PPL
+C142,447622,156388,291234,2026-05-11,291234,False,34.94,0.6506,4,47.54,Medium,Only 35% fees paid,Meera Malhotra,CPL
+C143,476340,362031,114309,2026-04-25,114309,False,76.0,0.24,20,26.8,Low,Within acceptable range,Ananya Verma,CPL
+C144,267401,198734,68667,2026-05-13,68667,False,74.32,0.2568,2,18.98,Low,Within acceptable range,Aditi Menon,PPL
+C145,559795,317155,242640,2026-05-12,242640,False,56.66,0.4334,3,31.84,Low,Within acceptable range,Kiran Rao,PPL
+C146,575160,539898,35262,2026-04-07,35262,False,93.87,0.0613,38,23.29,Low,Within acceptable range,Pushpa Murthy,PPL
+C147,341649,328914,12735,2026-04-06,12735,False,96.27,0.0373,39,22.11,Low,Within acceptable range,Hemant Reddy,PPL
+C148,559779,483709,76070,2026-04-27,76070,False,86.41,0.1359,18,18.51,Low,Within acceptable range,Sudha Kumar,CPL
+C149,331042,230423,100619,2026-04-09,100619,False,69.61,0.3039,36,39.27,Low,Within acceptable range,Rahul Patel,PPL
+C150,220055,101059,118996,2026-03-21,118996,False,45.92,0.5408,55,65.36,Medium,55d since last payment,Arjun Patel,PPL
