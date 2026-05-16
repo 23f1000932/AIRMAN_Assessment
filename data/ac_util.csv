@@ -30,7 +30,7 @@ A028,VT-HAW028,PA28,B04,186,20,13,2.5,1.34,Under-utilised (<40%),10.75,False,Tru
 A029,VT-AIR029,C152,B01,127,52,11,4.0,3.15,Under-utilised (<40%),40.94,False,True,False
 A030,VT-FOX030,C152,B01,177,62,5,3.5,1.98,Under-utilised (<40%),35.03,False,False,False
 A031,VT-EAG031,SR20,B02,186,46,10,1.0,0.54,Under-utilised (<40%),24.73,False,True,False
-A032,VT-EAG032,DA42,B03,184,18,7,-716.5,-389.4,Under-utilised (<40%),9.78,False,False,False
+A032,VT-EAG032,DA42,B03,184,18,7,2.0,1.09,Under-utilised (<40%),9.78,False,False,False
 A033,VT-SKY033,DA40,B02,192,48,6,8.0,4.17,Under-utilised (<40%),25.0,False,False,False
 A034,VT-JET034,C172,B01,161,38,6,0.0,0.0,Under-utilised (<40%),23.6,False,False,False
 A035,VT-SKY035,PA28,B03,184,30,7,0.0,0.0,Under-utilised (<40%),16.3,False,False,False

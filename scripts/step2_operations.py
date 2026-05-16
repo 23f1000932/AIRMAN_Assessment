@@ -16,15 +16,38 @@ sorties     = pd.read_csv(os.path.join(DATA, "sorties.csv"))
 aircraft    = pd.read_csv(os.path.join(DATA, "aircraft.csv"))
 instructors = pd.read_csv(os.path.join(DATA, "instructors.csv"))
 
-for col in ['scheduled_start','scheduled_end','actual_start','actual_end']:
+# ── STEP A: Parse datetimes and validate duration ─────────────────────────────
+for col in ['scheduled_start', 'scheduled_end', 'actual_start', 'actual_end']:
     sorties[col] = pd.to_datetime(sorties[col], errors='coerce')
-sorties['scheduled_start'] = pd.to_datetime(sorties['scheduled_start'])
+sorties['scheduled_start'] = pd.to_datetime(sorties['scheduled_start'], errors='coerce')
 
-# ── AIRCRAFT UTILIZATION ──────────────────────────────────────────────────────
-comp = sorties[sorties['status']=='completed'].copy()
-comp['flight_hours'] = (comp['actual_end'] - comp['actual_start']).dt.total_seconds() / 3600
+# Compute duration for all sorties
+sorties['duration_hours'] = (
+    (sorties['actual_end'] - sorties['actual_start']).dt.total_seconds() / 3600
+)
 
-ac_flown = comp.groupby('aircraft_id')['flight_hours'].sum().reset_index()
+# Flag invalid durations: negative OR impossibly long (>12 hours)
+invalid_duration_mask = (
+    (sorties['duration_hours'] < 0) | (sorties['duration_hours'] > 12)
+) & sorties['duration_hours'].notna()
+
+invalid_count = invalid_duration_mask.sum()
+invalid_sortie_ids = sorties.loc[invalid_duration_mask, 'sortie_id'].tolist()
+
+if invalid_count > 0:
+    print(f"WARNING: {invalid_count} sorties have invalid duration — excluded from utilization")
+    print(f"  Affected sortie IDs: {invalid_sortie_ids}")
+    # Set duration to NaN for invalid rows
+    sorties.loc[invalid_duration_mask, 'duration_hours'] = np.nan
+
+# ── STEP B: Aircraft utilization using validated durations ────────────────────
+valid_comp = sorties[
+    (sorties['status'] == 'completed') &
+    (sorties['duration_hours'] > 0) &
+    (sorties['duration_hours'].notna())
+].copy()
+
+ac_flown = valid_comp.groupby('aircraft_id')['duration_hours'].sum().reset_index()
 ac_flown.columns = ['aircraft_id', 'actual_flown_hours']
 
 ac_util = aircraft.merge(ac_flown, on='aircraft_id', how='left')
@@ -36,6 +59,10 @@ ac_util['maintenance_pct'] = (ac_util['maintenance_downtime_hours'] / ac_util['t
 ac_util['maintenance_flag'] = ac_util['maintenance_pct'] > 50
 ac_util['defect_flag'] = ac_util['defect_count'] >= 10
 ac_util['data_error_flag'] = ac_util['maintenance_downtime_hours'] > ac_util['total_available_hours']
+
+# Sanity check: no aircraft should have negative flown hours
+assert (ac_util['actual_flown_hours'] >= 0).all(), "ERROR: Negative flown hours detected!"
+assert (ac_util['utilization_rate'] >= 0).all(), "ERROR: Negative utilization rate detected!"
 
 # ── INSTRUCTOR UTILIZATION ────────────────────────────────────────────────────
 instructors['flight_ratio'] = (instructors['total_flight_hours'] / instructors['total_duty_hours']).round(3)
@@ -55,7 +82,8 @@ cancellation_rate = cancelled_n / total_sorties * 100
 cancel_breakdown = sorties[sorties['status']=='cancelled']['cancel_reason'].value_counts()
 cancel_pct       = (cancel_breakdown / cancelled_n * 100).round(1)
 
-# Avg delay for completed sorties
+# Avg delay for completed sorties (using valid_comp for accuracy)
+comp = sorties[sorties['status']=='completed'].copy()
 avg_delay = comp['delay_minutes'].mean()
 delayed_n = (comp['delay_minutes'] > 0).sum()
 
@@ -82,24 +110,81 @@ dow_delay = comp.groupby(comp['scheduled_start'].dt.day_name())['delay_minutes']
 # Delay distribution by lesson type
 lesson_delay = comp.groupby('lesson_type')['delay_minutes'].mean().round(1).sort_values(ascending=False)
 
-# ── WRITE REPORT ──────────────────────────────────────────────────────────────
-lines = [
-    "# Skynet Operations Analysis Report",
-    f"*Period: May 1 – June 30, 2026 | Reference Date: {REF_DATE.date()}*\n",
-    "---\n## 1. Fleet Utilisation\n",
-    f"**Total aircraft in fleet:** {len(aircraft)}  |  **Data anomalies (maintenance > available):** {ac_util['data_error_flag'].sum()} aircraft\n",
-    "### 1.1 Aircraft Utilisation Rates\n",
-    "| Aircraft | Type | Base | Avail Hrs | Flown Hrs | Util% | Status |",
-    "|----------|------|------|-----------|-----------|-------|--------|",
-]
-for _, row in ac_util.sort_values('utilization_rate').iterrows():
-    flag = " ⚠️ DATA ERROR" if row['data_error_flag'] else ""
-    lines.append(f"| {row['aircraft_id']} | {row['type']} | {row['base_id']} | {row['total_available_hours']} | "
-                 f"{row['actual_flown_hours']:.1f} | {row['utilization_rate']:.1f}% | {row['util_flag']}{flag} |")
+# ── COMPUTE SUMMARY STATS FOR REPORT ─────────────────────────────────────────
+data_error_aircraft = ac_util[ac_util['data_error_flag']]
+valid_util = ac_util[~ac_util['data_error_flag']].copy()
+avg_util_rate = valid_util['utilization_rate'].mean().round(1)
+n_adequate    = (valid_util['utilization_rate'] >= 40).sum()
+n_under       = (valid_util['utilization_rate'] < 40).sum()
+n_zero        = (valid_util['utilization_rate'] == 0).sum()
+n_data_error  = len(data_error_aircraft)
 
 under_util = ac_util[ac_util['utilization_rate'] < 40]
 high_maint = ac_util[ac_util['maintenance_flag'] & ~ac_util['data_error_flag']]
 hi_defect  = ac_util[ac_util['defect_flag']]
+
+# Top 10 and bottom 10 (excluding data error aircraft)
+top10  = valid_util.sort_values('utilization_rate', ascending=False).head(10)
+bot10  = valid_util.sort_values('utilization_rate', ascending=True).head(10)
+defect_review = ac_util[ac_util['defect_flag']].sort_values('defect_count', ascending=False)
+
+# ── WRITE REPORT (Fix 3: summary + top/bottom instead of 120-row table) ───────
+lines = [
+    "# Skynet Operations Analysis Report",
+    f"*Period: May 1 – June 30, 2026 | Reference Date: {REF_DATE.date()}*\n",
+    "---\n## 1. Fleet Utilisation\n",
+    f"**Total aircraft in fleet:** {len(aircraft)}  |  **Data anomalies (maintenance > available):** {n_data_error} aircraft\n",
+    "### 1.1 Fleet Utilization Summary\n",
+    "| Metric | Value |",
+    "|--------|-------|",
+    f"| Total aircraft in fleet | {len(aircraft)} |",
+    f"| Aircraft with utilization data | {len(valid_util)} ({n_data_error} excluded — data integrity errors) |",
+    f"| Average utilization rate | {avg_util_rate}% |",
+    f"| Aircraft with utilization ≥ 40% (adequate) | {n_adequate} |",
+    f"| Aircraft with utilization < 40% (under-utilized) | {n_under} |",
+    f"| Aircraft with utilization = 0% (no sorties flown) | {n_zero} |",
+    "",
+    "### Top 10 Best-Utilized Aircraft\n",
+    "| Aircraft | Type | Base | Avail Hrs | Flown Hrs | Util% | Status |",
+    "|----------|------|------|-----------|-----------|-------|--------|",
+]
+for _, row in top10.iterrows():
+    lines.append(f"| {row['aircraft_id']} | {row['type']} | {row['base_id']} | {row['total_available_hours']} | "
+                 f"{row['actual_flown_hours']:.1f} | {row['utilization_rate']:.1f}% | {row['util_flag']} |")
+
+lines += [
+    "",
+    "### Bottom 10 Most Under-Utilized Aircraft\n",
+    "*Excluding A003, A009, A016 (data integrity errors — see below)*\n",
+    "| Aircraft | Type | Base | Avail Hrs | Flown Hrs | Util% | Status |",
+    "|----------|------|------|-----------|-----------|-------|--------|",
+]
+for _, row in bot10.iterrows():
+    lines.append(f"| {row['aircraft_id']} | {row['type']} | {row['base_id']} | {row['total_available_hours']} | "
+                 f"{row['actual_flown_hours']:.1f} | {row['utilization_rate']:.1f}% | {row['util_flag']} |")
+
+lines += [
+    "",
+    "### Aircraft Requiring Operational Review (Defect Count ≥ 10)\n",
+    "| Aircraft | Type | Base | Defect Count | Avail Hrs | Flown Hrs | Util% |",
+    "|----------|------|------|-------------|-----------|-----------|-------|",
+]
+for _, row in defect_review.head(15).iterrows():
+    flag = " ⚠️ DATA ERROR" if row['data_error_flag'] else ""
+    lines.append(f"| {row['aircraft_id']} | {row['type']} | {row['base_id']} | {row['defect_count']} | "
+                 f"{row['total_available_hours']} | {row['actual_flown_hours']:.1f} | {row['utilization_rate']:.1f}%{flag} |")
+
+lines += [
+    f"\n*...and {max(0, len(defect_review)-15)} more aircraft with defect_count ≥ 10 — full list in data_quality_report.md*\n",
+    "### Data Integrity Flags\n",
+    "The following aircraft have maintenance_downtime_hours exceeding total_available_hours (physically impossible). "
+    "They are excluded from utilization calculations pending engineering review.\n",
+    "| Aircraft | Type | Base | Avail Hrs | Maintenance Hrs | Status |",
+    "|----------|------|------|-----------|-----------------|--------|",
+]
+for _, row in data_error_aircraft.iterrows():
+    lines.append(f"| {row['aircraft_id']} | {row['type']} | {row['base_id']} | "
+                 f"{row['total_available_hours']} | {row['maintenance_downtime_hours']} | ⚠️ DATA ERROR |")
 
 lines += [
     f"\n**Under-utilised aircraft (<40%):** {len(under_util)} aircraft",
@@ -130,7 +215,7 @@ lines += [
     f"**Average delay (completed sorties):** {avg_delay:.1f} minutes\n",
     "### 3.1 Cancellation Breakdown",
     "| Reason | Count | % of Cancellations |",
-    "|--------|-------|--------------------|",
+    "|--------|-------|-------------------|",
 ]
 for reason, cnt in cancel_breakdown.items():
     lines.append(f"| {reason} | {cnt} | {cancel_pct[reason]}% |")
@@ -146,7 +231,7 @@ for _, row in base_stats.iterrows():
 lines += [
     "\n### 3.3 Cancellation Rate by Lesson Type",
     "| Lesson Type | Total | Cancelled | Cancel Rate% |",
-    "|-------------|-------|-----------|--------------|",
+    "|-------------|-------|-----------|--------------|}",
 ]
 for _, row in lesson_stats.iterrows():
     lines.append(f"| {row['lesson_type']} | {row['total']} | {row['cancelled']} | {row['cancel_rate']}% |")
@@ -176,6 +261,13 @@ lines += [
     "5. **4 qualification mismatch sorties** are a regulatory red flag. Skynet must hard-block any sortie where instructor's `aircraft_qualified` ≠ the assigned aircraft type.",
 ]
 
+# Add invalid duration note if applicable
+if invalid_count > 0:
+    lines += [
+        f"\n**Data Quality Note:** {invalid_count} sortie(s) with invalid actual_end/actual_start timestamps were detected and excluded from utilization calculations. "
+        f"Affected sortie IDs: {', '.join(invalid_sortie_ids)}. These are likely data entry errors.",
+    ]
+
 with open(os.path.join(REPORTS, "skynet_operations_analysis.md"), "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
 
@@ -183,6 +275,10 @@ print("DONE: skynet_operations_analysis.md")
 print(f"Completion rate: {completion_rate:.1f}% | Avg delay: {avg_delay:.1f} min")
 print(f"Overloaded instructors: {len(overloaded)} | Under-utilised aircraft: {len(under_util)}")
 print(f"Cancel reasons: {cancel_breakdown.to_dict()}")
+if invalid_count > 0:
+    print(f"WARNING: {invalid_count} sorties excluded from utilization due to invalid duration")
+    print(f"  Sortie IDs: {invalid_sortie_ids}")
 
 # Save ac_util for use in charts
 ac_util.to_csv(os.path.join(DATA, "ac_util.csv"), index=False)
+print("Saved ac_util.csv")

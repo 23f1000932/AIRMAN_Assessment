@@ -28,17 +28,24 @@ risk     = pd.read_csv(os.path.join(DATA, "risk_full.csv"))
 
 # ── CHART 1: Aircraft Utilisation ────────────────────────────────────────────
 print("Generating Chart 1...")
-ac_plot = ac_util[~ac_util['data_error_flag']].sort_values('utilization_rate').copy()
+ac_valid = ac_util[~ac_util['data_error_flag']].copy()
+# Show top 20 by utilization rate (descending) for executive readability
+ac_plot = ac_valid.sort_values('utilization_rate', ascending=False).head(20).sort_values('utilization_rate')
 colors = ['#C73E1D' if x < 40 else '#F18F01' if x <= 70 else '#44BBA4' for x in ac_plot['utilization_rate']]
 
-fig, ax = plt.subplots(figsize=(14, max(6, len(ac_plot)*0.15)))
+fig, ax = plt.subplots(figsize=(14, 8))
 bars = ax.barh(ac_plot['aircraft_id'], ac_plot['utilization_rate'], color=colors, height=0.7, edgecolor='white', linewidth=0.3)
 ax.axvline(x=40, color='#C73E1D', linestyle='--', linewidth=1.5, label='Under-utilised threshold (40%)')
 ax.axvline(x=70, color='#44BBA4', linestyle='--', linewidth=1.5, label='Optimal threshold (70%)')
+for bar, val in zip(bars, ac_plot['utilization_rate']):
+    ax.text(bar.get_width() + 0.5, bar.get_y() + bar.get_height()/2,
+            f'{val:.1f}%', va='center', ha='left', fontsize=8, fontweight='bold')
 ax.set_xlabel('Utilisation Rate (%)', fontsize=11, fontweight='bold')
-ax.set_title('Fleet Aircraft Utilisation Rate\n(Excluding 3 aircraft with data integrity errors: A003, A009, A016)',
+ax.set_title('Top 20 Aircraft by Utilisation Rate\n'
+             f'(Fleet avg: {ac_valid["utilization_rate"].mean():.1f}% | '
+             f'3 data-error aircraft excluded: A003, A009, A016)',
              fontsize=12, fontweight='bold', pad=12)
-ax.set_xlim(0, 110)
+ax.set_xlim(0, 120)
 patches = [mpatches.Patch(color='#C73E1D', label='Under-utilised (<40%)'),
            mpatches.Patch(color='#F18F01', label='Optimal (40-70%)'),
            mpatches.Patch(color='#44BBA4', label='High (>70%)')]
@@ -50,6 +57,7 @@ plt.tight_layout()
 plt.savefig(os.path.join(CHARTS, "aircraft_utilization.png"), dpi=300, bbox_inches='tight')
 plt.close()
 print("  Saved aircraft_utilization.png")
+
 
 # ── CHART 2: Cancellation Reasons ────────────────────────────────────────────
 print("Generating Chart 2...")
