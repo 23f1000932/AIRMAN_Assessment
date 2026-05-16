@@ -1,4 +1,4 @@
-# AIRMAN Data Science Assessment — Ayan
+# AIRMAN Data Science Assessment , Ayan
 
 ## Project Overview
 Comprehensive business intelligence analysis of simulated FTO (Flight Training Organisation) data for AIRMAN Aeronautics Pvt. Ltd.
@@ -6,11 +6,11 @@ Covers operational analytics for the **Skynet** platform and product intelligenc
 
 ## Tools & Libraries Used
 - **Python 3.x**
-- `pandas` — data loading, transformation, merging
-- `numpy` — numerical computation
-- `matplotlib` + `seaborn` — all 7 charts (300 DPI PNG)
-- Standard library only — `os`, `warnings`, `datetime`
-- **No ML models** — all scoring uses transparent weighted formulas
+- `pandas` , data loading, transformation, merging
+- `numpy` , numerical computation
+- `matplotlib` + `seaborn` , all 7 charts (300 DPI PNG)
+- Standard library only , `os`, `warnings`, `datetime`
+- **No ML models** , all scoring uses transparent weighted formulas
 
 ## Setup Instructions
 ```bash
@@ -19,7 +19,7 @@ pip install pandas numpy matplotlib seaborn
 
 ## How to Run
 
-### Option A — Run individual scripts in order:
+### Option A , Run individual scripts in order:
 ```bash
 python scripts/step1_load_clean.py     # Data cleaning + data_quality_report.md
 python scripts/step2_operations.py    # Skynet ops analysis
@@ -31,7 +31,7 @@ python scripts/step7_charts.py        # All 7 charts
 python scripts/step8_reports.py       # Executive insights + methodology
 ```
 
-### Option B — Run the Jupyter notebook:
+### Option B , Run the Jupyter notebook:
 ```bash
 cd notebooks
 jupyter notebook analysis.ipynb
@@ -85,10 +85,10 @@ No machine learning is used. Every score component is directly readable from the
 | `charts/*.png` | 7 visualisations at 300 DPI |
 
 ## Known Limitations
-1. Flying rate projection assumes constant pace — no seasonal or scheduling-pattern adjustments
-2. Payment risk excludes 4 cadets with data errors — their true risk is unquantified
+1. Flying rate projection assumes constant pace , no seasonal or scheduling-pattern adjustments
+2. Payment risk excludes 4 cadets with data errors , their true risk is unquantified
 3. Aircraft utilisation cannot be computed for A003, A009, A016 due to data integrity errors
-4. TOGA data has only 3 subjects per cadet (not all 7 subjects) — readiness scores are partial
+4. TOGA data has only 3 subjects per cadet (not all 7 subjects) , readiness scores are partial
 5. Instructor performance quality cannot be assessed from quantity metrics alone
 
 ## What I Would Improve With More Time
@@ -120,7 +120,7 @@ No machine learning is used. Every score component is directly readable from the
    - All 7 charts were reviewed for axis labels, color coding, and data accuracy before export
 
 4. **Which AI suggestion did you reject or modify?**
-   - The initial aircraft utilization chart included all 120 aircraft in one unreadable bar —
+   - The initial aircraft utilization chart included all 120 aircraft in one unreadable bar ,
      I changed this to show summary statistics with a top/bottom breakdown
    - The risk formula initially used sklearn MinMaxScaler; I replaced this with explicit
      clip-based normalization to avoid any ML dependency, per the assessment rules
@@ -134,10 +134,10 @@ No machine learning is used. Every score component is directly readable from the
 6. **Pick one formula and explain it in your own words:**
    The study_readiness score weights quiz performance at 40%, chapter completion at 30%,
    and practice test frequency at 30%. Quiz performance gets the highest weight because
-   it is the only measure that tests actual retention — a cadet can complete chapters
+   it is the only measure that tests actual retention , a cadet can complete chapters
    passively without learning. Practice tests get equal weight to chapter progress because
    active retrieval predicts real exam performance better than passive reading does.
    The practice test component caps at 10 tests (full score) because beyond that point,
-   marginal returns diminish — a cadet who has done 10 tests per subject is exam-ready
+   marginal returns diminish , a cadet who has done 10 tests per subject is exam-ready
    regardless of absolute count.
 
