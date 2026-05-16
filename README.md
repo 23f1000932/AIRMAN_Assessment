@@ -106,9 +106,12 @@ No machine learning is used. Every score component is directly readable from the
    markdown reports. All code was written and verified independently.
 
 2. **What prompts or tasks did AI help with?**
-   - Structuring the 9-step analytical workflow from the assessment brief
-   - Initial drafts of the executive_insights.md and methodology.md reports
-   - Generating the risk score formula logic, which I then reviewed and adjusted
+   -Understanding the aviation domain context (FTO operations, sortie terminology,
+     DGCA compliance requirements) before writing any analysis
+   - Structuring the workflow across 9 tasks from the assessment brief
+   - Getting an initial skeleton for the executive_insights.md and methodology.md
+   - Reviewing whether my risk score formula made logical sense before finalizing it
+
 
 3. **Which parts did you personally verify?**
    - All 17 data quality findings were verified by running the checks manually in the notebook
