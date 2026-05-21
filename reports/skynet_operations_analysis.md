@@ -133,7 +133,7 @@ The following aircraft have maintenance_downtime_hours exceeding total_available
 
 ### 3.3 Cancellation Rate by Lesson Type
 | Lesson Type | Total | Cancelled | Cancel Rate% |
-|-------------|-------|-----------|--------------|}
+|-------------|-------|-----------|--------------|
 | Cross Country | 45 | 10 | 22.2% |
 | Instrument Flying | 36 | 7 | 19.4% |
 | Solo | 52 | 9 | 17.3% |
